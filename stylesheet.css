@@ -19,3 +19,29 @@ img:hover {
    filter: none;
    cursor: pointer;
 }
+
+.img-with-text {
+    text-align: justify;
+    width: 380px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 500%;
+    padding-left: 100px
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 100%;
+    font-weight: 1000;
+}
+
+p {
+    font-family: 'Frank Ruhl Libre', sans-serif;
+}
