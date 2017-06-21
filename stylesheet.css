@@ -1,8 +1,8 @@
-body {
-    background-color: #c7d9eb;
-  }
+header {
 
-img {
+}
+
+#projects {
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
@@ -12,7 +12,7 @@ img {
    box-shadow: 7px 7px 28px -1px rgba(0,0,0,0.75);
 }
 
-img:hover {
+#projects:hover {
    -webkit-filter: none;
    -moz-filter: none;
    -ms-filter: none;
@@ -79,6 +79,11 @@ h2 {
 footer {
 	clear: both;
 	padding: 0 15px;
+  padding-right: 500px;
+}
+
+#socialicons:hover {
+    opacity: .5;
 }
 
 @media screen and (max-width: 980px) {
@@ -149,4 +154,10 @@ footer {
 
 header, #content, #middle, #sidebar {
 	margin-bottom: 5px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background: #164D70;
 }
