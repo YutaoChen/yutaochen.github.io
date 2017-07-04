@@ -2,6 +2,24 @@ header {
 
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+}
+
+ul li {
+    display: inline;
+  }
+
+  ul li a {
+    text - decoration: none;
+    padding: 10px 1px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
 #projects {
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
@@ -34,6 +52,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 500%;
     padding-left: 100px;
+    padding-bottom: 0;
 }
 
 h2 {
@@ -76,9 +95,8 @@ h2 {
 	float: left;
 }
 
-footer {
-	clear: both;
-	padding: 0 15px;
+#social {
+	clear:both;
   padding-right: 500px;
 }
 
