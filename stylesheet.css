@@ -20,6 +20,17 @@ ul li {
     padding-bottom: 10px;
 }
 
+p {
+  padding-left: 50px;
+  line-height: 70px
+}
+
+
+#headshot {
+  padding-left: 500px;
+  size: 10%;
+}
+
 #projects {
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
@@ -52,7 +63,8 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 500%;
     padding-left: 100px;
-    padding-bottom: 0;
+    padding-top: 10px;
+    line-height: 12px
 }
 
 h2 {
@@ -97,7 +109,10 @@ h2 {
 
 #social {
 	clear:both;
-  padding-right: 500px;
+  padding-right: 670px;
+  padding-left: 15px;
+  padding-bottom: 1%;
+  padding-top: 0px;
 }
 
 #socialicons:hover {
