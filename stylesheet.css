@@ -144,12 +144,6 @@ h2 {
 	margin: 0px 5px 5px 5px;
 }
 
-#sidebar {
-	width: 300px;
-  padding: 5px 15px;
-	float: left;
-}
-
 #social {
 	clear:both;
   padding-right: 670px;
@@ -193,13 +187,6 @@ h2 {
 		float: right;
 	}
 
-	#sidebar {
-		clear: both;
-		padding: 1% 4%;
-		width: auto;
-		float: none;
-	}
-
 	header, footer {
 		padding: 1% 4%;
 	}
@@ -213,7 +200,7 @@ h2 {
 }
 
 /* for 700px or less */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 	#content {
 		width: auto;
@@ -224,11 +211,6 @@ h2 {
 		width: auto;
 		float: none;
 		margin-left: 0px;
-	}
-
-	#sidebar {
-		width: auto;
-		float: none;
 	}
 
 }
@@ -242,13 +224,10 @@ h2 {
 	h1 {
 		font-size: 2em;
 	}
-	#sidebar {
-		display: none;
-	}
 
 }
 
-header, #content, #middle, #sidebar {
+header, #content, #middle, {
 	margin-bottom: 5px;
 }
 
