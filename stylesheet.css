@@ -37,7 +37,7 @@ padding:0;
 }
 
 .backgroundimage {
-  background: url(1.png);
+  background: url(1.png) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
