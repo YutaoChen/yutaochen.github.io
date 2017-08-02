@@ -29,19 +29,31 @@ p {
   line-height: 30px;
 }
 
-#backgroundimage {
-  background: url(1.png);
+html,
+body {
+height: 100%;
+margin:0;
+padding:0;
+}
+
+.backgroundimage {
+  background: url(1.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 0;
-  padding: 0;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: none;
+  padding: none;
   width:100%;
   height:100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  box-sizing:content-box;
 }
 
 #headshot {
@@ -245,4 +257,5 @@ body {
     font-family: 'Lato', sans-serif;
     color: #FFF;
     background: #164D70;
+    height: 100%;
 }
