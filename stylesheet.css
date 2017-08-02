@@ -159,6 +159,11 @@ h2 {
     opacity: .5;
 }
 
+
+#cgtnamerica:hover {
+    opacity: .5;
+}
+
 @media screen and (max-width: 980px) {
 
 	#pagewrap {
