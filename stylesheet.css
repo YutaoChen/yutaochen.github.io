@@ -219,20 +219,17 @@ header #content #middle {
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-
-#pagewrap {
-  display: flex;
+  #pagewrap {
+      display: flex;
 }
 
   #content {
-
-  		width: 200px;
+  		width: 100%;
   		float: none;
   	}
 
   	#middle {
-      flex:3;
-  		width: 200px;
+  		width: 100%;
   		float: none;
   	}
 
@@ -326,12 +323,14 @@ header #content #middle {
   }
 
   #content {
+    flex: 1;
   	width: 280px;
   	float: left;
     padding: 5px 15px;
   }
 
   #middle {
+    flex: 3;
   	width: 280px; /* Account for margins + border values */
   	float: left;
     padding: 5px 15px;
