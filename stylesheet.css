@@ -224,11 +224,13 @@ header #content #middle {
 }
 
   #content {
+      display: flex;
   		width: 100%;
   		float: none;
   	}
 
   	#middle {
+      display: flex;
   		width: 100%;
   		float: none;
   	}
