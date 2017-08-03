@@ -321,19 +321,16 @@ header #content #middle {
     margin-right: auto;
     padding: 25px 25px;
     margin: 25px 25px;
-    flex-direction: row;
   }
 
   #content {
-    flex: 1;
-  	width: 280px;
+  	width: auto;
   	float: left;
     padding: 5px 15px;
   }
 
   #middle {
-    flex: 3;
-  	width: 280px; /* Account for margins + border values */
+  	width: auto; /* Account for margins + border values */
   	float: left;
     padding: 5px 15px;
   }
