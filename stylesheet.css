@@ -30,7 +30,7 @@ body {
 .vignette {
   background-color: #888888;
   background: rgba(15,15,15,0.3);
-  padding-bottom: 20px;
+  padding-bottom: 7px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -217,30 +217,31 @@ header #content #middle {
 
 
 
-/* for 480px or less */
+/* mobile */
 @media screen and (max-width: 480px) {
-  #pagewrap {
-      display: flex;
+
+#pagewrap {
+  display: flex;
 }
 
 a h1{
- font-size: 100px;
- text-align: center;
- margin: 0;
- display: block;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+  display: block;
 }
 
-  #content {
-      display: flex;
-  		width: 100%;
-  		float: none;
-  	}
+#content {
+  display: flex;
+  width: 100%;
+  float: none;
+}
 
-  	#middle {
-      display: flex;
-  		width: 100%;
-  		float: none;
-  	}
+#middle {
+  display: flex;
+  width: 100%;
+  float: none;
+  }
 
 }
 
