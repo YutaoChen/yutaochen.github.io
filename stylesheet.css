@@ -29,7 +29,6 @@ body {
    font-family: 'courier';
    text-align: center;
    padding-top: 15px;
-   position: relative;
    bottom: 0;
    width: 100%;
    height: 30px;   /* Height of the footer */
@@ -209,64 +208,60 @@ header, #content, #middle, {
    text-align: center;
   }
 
-  .backgroundimage {
-    background: url(2.png) fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
   .vignette {
      text-align: center;
+  }
+}
+
+  .footer{
+    display: none;
+  }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+  .backgroundimage {
+    background: url(2.png) fixed;
+  }
+
+  p {
+    text-align: center;
+    padding: none;
+    font-size: 15px;
+  }
+
+  span {
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 351%;
+    padding: none;
+    text-align: center;
+  }
+
+  #pagewrap {
+	  padding: 2px;
+	  margin: 5px auto;
+    flex-direction: column;
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #middle {
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    text-align: center;
   }
 
   .footer {
     display: none;
   }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-
-  h1 {
-    font-size: 351%;
-    text-align: center;
-  }
-
-  .vignette {
-    text-align: center;
-  }
-
-  .backgroundimage {
-    background: url(2.png) fixed;
-  }
-
-p {
-  text-align: center;
-  padding: none;
-  font-size: 15px;
-  }
-
-span {
-  padding-top: 100px;
-}
-
-#pagewrap {
-	padding: 2px;
-	margin: 5px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-#middle {
-  height: 300px;
-  width: 100%;
-  padding-left: 15px;
-}
-
-.footer {
-  display: none;
-}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 768px) {
@@ -275,15 +270,13 @@ span {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1280px) {
-
-
+@media only screen and (min-width : 768px) and (max-width : 1282px) {
 
 
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1281px) {
+@media only screen and (min-width : 1282px) {
 
   .footer {
     position: absolute;
