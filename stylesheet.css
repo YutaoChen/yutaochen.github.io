@@ -278,20 +278,30 @@ header, #content, #middle, {
 
   #pagewrap {
     display: block;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: auto;
 	  padding: none;
 	  margin: none;
     flex-direction: column;
   }
 
+
   #content {
-    display: block;
     height: 100%;
     width: 100%;
     text-align: center;
   }
 
+  #projects {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        height: 100%;
+      }
+
   #middle {
-    display: block;
     height: 100%;
     width: 100%;
     padding-left: 15px;
