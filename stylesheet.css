@@ -232,7 +232,7 @@ header #content #middle {
 
   .vignette {
      text-align: center;
-     padding: 0;
+     padding: 10px;
      margin: 0;
   }
 
@@ -247,6 +247,7 @@ header #content #middle {
     text-align: center;
     font-size: 15px;
     line-height: 25px;
+    padding-bottom: 30px;
   }
 
   p1 {
@@ -266,7 +267,7 @@ header #content #middle {
   }
 
   h1 {
-    padding: 0;
+    padding: 100px;
     margin: 0;
     font-size: 351%;
     text-align: center;
