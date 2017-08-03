@@ -291,11 +291,11 @@ header, #content, #middle, {
   }
 
   #projects {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1000px;
-        height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 100%;
       }
 
   #middle {
@@ -311,10 +311,32 @@ header, #content, #middle, {
 
 
 /* Desktops and laptops ----------- */
-@media all and (min-width : 1081px) {
+@media all and (min-width : 1300px) {
 
   .header {
     padding-bottom: 50px;
+  }
+
+  #pagewrap {
+    display: inline-flex;
+    clear: right;
+    margin-left: 10%;
+    margin-right: auto;
+    padding: 25px 25px;
+    margin: 25px 25px;
+    flex-direction: row;
+  }
+
+  #content {
+  	width: 280px;
+  	float: left;
+    padding: 5px 15px;
+  }
+
+  #middle {
+  	width: 280px; /* Account for margins + border values */
+  	float: left;
+    padding: 5px 15px;
   }
 
 }
