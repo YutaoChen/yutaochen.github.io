@@ -208,8 +208,7 @@ header, #content, #middle, {
    background:#6cf;
 }
 
-/* Smartphones (portrait) ----------- */
-@media screen and (max-width:680px) {
+@media all and (min-width:320px) and (max-width:1080px) {
 
   a h1{
    font-size: 150px;
