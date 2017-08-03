@@ -311,7 +311,7 @@ header, #content, #middle, {
 
 
 /* Desktops and laptops ----------- */
-@media all and (min-width : 1282px) {
+@media all and (min-width : 1081px) {
 
   .header {
     padding-bottom: 50px;
