@@ -219,13 +219,12 @@ header, #content, #middle, {
   a h1{
    font-size: 150px;
    text-align: center;
-   padding-right: 100px;
    margin: none;
   }
 
   ul {
    text-align: center;
-   padding-left: 300px;
+   padding-left: 335px;
   }
 
   .vignette {
@@ -239,16 +238,11 @@ header, #content, #middle, {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: block;
-    margin-left: none;
-    margin-right: none;
-    padding: none;
   }
 
   p {
     text-align: center;
     font-size: 15px;
-    padding-right: 100px;
     line-height: 30px;
   }
 
