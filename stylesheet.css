@@ -177,7 +177,15 @@ h2 {
     opacity: .5;
 }
 
-#cgtnamerica:hover {
+.cgtnamerica img {
+    height: 100px;
+    width: auto;
+    margin: 65px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cgtnamerica img:hover {
     opacity: .5;
 }
 
@@ -201,7 +209,7 @@ header, #content, #middle, {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (min-width : 480px) {
 
   h1 {
    font-size: 700%;
@@ -211,14 +219,9 @@ header, #content, #middle, {
   .vignette {
      text-align: center;
   }
-}
-
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
 
   .backgroundimage {
-    background: url(2.png) fixed;
+    background: url(1.png) fixed;
   }
 
   p {
@@ -227,8 +230,12 @@ header, #content, #middle, {
     font-size: 15px;
   }
 
-  span {
-    padding-top: 100px;
+  .cgtnamerica img {
+      height: 200px;
+      width: auto;
+      margin: 65px;
+      margin-bottom: 10px;
+      text-align: center;
   }
 
   h1 {
