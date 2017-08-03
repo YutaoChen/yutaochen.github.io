@@ -145,6 +145,8 @@ h2 {
 
 #pagewrap {
 	padding: 60px;
+  width: 960px;
+  margin: 20px auto;
   padding-left: 40px;
   padding-right: 250px;
   display: flex;
@@ -163,6 +165,7 @@ h2 {
 	float: left;
   padding: 5px 15px;
   padding-left: 140px;
+  margin: 0px 5px 5px 5px;
 }
 
 #social {
@@ -338,4 +341,49 @@ header #content #middle {
     padding: 5px 15px;
   }
 
+}
+
+
+@media screen and (max-width: 980px) {
+
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
 }
