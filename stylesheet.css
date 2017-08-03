@@ -209,19 +209,27 @@ header, #content, #middle, {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (min-width : 480px) {
+@media screen and (max-width:680px) {
 
-  h1 {
-   font-size: 700%;
+  a h1{
+   font-size: 150px;
    text-align: center;
   }
+
+  ul {
+   text-align: center;
+  }
+
 
   .vignette {
      text-align: center;
   }
 
   .backgroundimage {
-    background: url(1.png) fixed;
+    background: url(1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   p {
@@ -268,19 +276,9 @@ header, #content, #middle, {
   }
 }
 
-@media only screen and (min-width : 480px) and (max-width : 768px) {
-
-
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1282px) {
-
-
-}
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1282px) {
+@media all and (min-width : 1282px) {
 
   .footer {
     position: absolute;
