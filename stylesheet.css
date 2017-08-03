@@ -62,6 +62,15 @@ p {
   line-height: 30px;
 }
 
+p1 {
+  font-family: 'courier';
+  font-size: 18px;
+  line-height: 60px;
+  padding: 40px;
+  padding-top: 30px;
+  margin: 30px;
+}
+
 html,
 body {
 height: 100%;
@@ -213,15 +222,18 @@ header, #content, #middle, {
   a h1{
    font-size: 150px;
    text-align: center;
+   padding-right: 100px;
+   margin: none;
   }
 
   ul {
    text-align: center;
   }
 
-
   .vignette {
      text-align: center;
+     padding: none;
+     margin: none;
   }
 
   .backgroundimage {
@@ -229,41 +241,57 @@ header, #content, #middle, {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
   }
 
   p {
     text-align: center;
-    padding: none;
     font-size: 15px;
+    padding-right: 100px;
+  }
+
+  p1 {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    margin: none;
+    line-height: 1px;
   }
 
   .cgtnamerica img {
-      height: 200px;
+      height: 150px;
       width: auto;
-      margin: 65px;
-      margin-bottom: 10px;
-      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
   }
 
   h1 {
+    padding: none;
+    margin: none;
     font-size: 351%;
     padding: none;
     text-align: center;
   }
 
   #pagewrap {
-	  padding: 2px;
-	  margin: 5px auto;
+    display: block;
+	  padding: none;
+	  margin: none;
     flex-direction: column;
   }
 
   #content {
+    display: block;
     height: 100%;
     width: 100%;
     text-align: center;
   }
 
   #middle {
+    display: block;
     height: 100%;
     width: 100%;
     padding-left: 15px;
