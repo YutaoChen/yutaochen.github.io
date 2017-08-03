@@ -311,7 +311,7 @@ header #content #middle {
 @media all and (min-width : 1280px) {
 
   .header {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   #pagewrap {
