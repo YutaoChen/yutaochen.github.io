@@ -202,6 +202,22 @@ footer {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
+  .vignette {
+    background-color: #888888;
+    background: rgba(15,15,15,0.3);
+    padding-bottom: none;
+    padding-left: none;
+    padding-right: none;
+  }
+
+  .backgroundimage {
+    background: url(2.png) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
 h1 {
   padding: none;
 }
@@ -209,6 +225,7 @@ h1 {
 p {
   text-align: center;
   padding: none;
+  font-size: 15px;
   }
 
 span {
@@ -235,8 +252,7 @@ p {
 #middle {
   height: 300px;
   width: 100%;
-  padding-left: 20px;
-
+  padding-left: 15px;
 }
 
 footer {
