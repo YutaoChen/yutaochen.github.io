@@ -209,33 +209,37 @@ header, #content, #middle, {
    text-align: center;
   }
 
+  .backgroundimage {
+    background: url(2.png) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .vignette {
      text-align: center;
+  }
+
+  .footer {
+    display: none;
   }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
+  h1 {
+    font-size: 351%;
+    text-align: center;
+  }
+
   .vignette {
-    background-color: #888888;
-    background: rgba(15,15,15,0.3);
-    padding-bottom: none;
-    padding-left: none;
-    padding-right: none;
+    text-align: center;
   }
 
   .backgroundimage {
     background: url(2.png) fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
   }
-
-h1 {
-  padding: none;
-}
 
 p {
   text-align: center;
@@ -245,16 +249,6 @@ p {
 
 span {
   padding-top: 100px;
-}
-
-h1 {
-   font-size: 351%;
-   padding-right: 67px;
-}
-
-p {
-   text-align: center;
-   font-size: 15px;
 }
 
 #pagewrap {
