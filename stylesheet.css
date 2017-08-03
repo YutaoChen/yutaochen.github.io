@@ -223,6 +223,13 @@ header #content #middle {
       display: flex;
 }
 
+a h1{
+ font-size: 100px;
+ text-align: center;
+ margin: 0;
+ display: block;
+}
+
   #content {
       display: flex;
   		width: 100%;
@@ -244,11 +251,6 @@ header #content #middle {
    margin: 0;
   }
 
-  a h1{
-   font-size: 150px;
-   text-align: center;
-   margin: 0;
-  }
 
   ul {
    text-align: center;
