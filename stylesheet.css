@@ -225,6 +225,8 @@ header, #content, #middle, {
   ul {
    text-align: center;
    padding-left: 335px;
+   padding-bottom: 10px;
+   overflow: hidden;
   }
 
   .vignette {
