@@ -212,6 +212,14 @@ header #content #middle {
 /* mobile */
 @media all and (max-width: 480px) {
 
+  h1{
+    text-align: center;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 400%;
+    line-height: 100%;
+  }
+
   .vignette {
   padding-bottom: 100px;
   display: inline;
@@ -221,11 +229,26 @@ pre {
   display: none;
 }
 
+ul{
+  box-sizing: inherit;
+  display: inline;
+}
+
+ul li {
+  text-align: center;
+  padding: 0px;
+}
+
+ul li a {
+  padding: 0px;
+}
+
 #social {
-  display: none;
+  padding: 0px;
 }
 
 #pagewrap {
+  padding: 0px;
   display: flex;
   width: 100%;
 }
@@ -241,17 +264,6 @@ p {
   padding: 10px;
 }
 
-body {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-h1{
-  padding-bottom: 10px;
-  font-size: 400px;
-  line-height: 100%;
-}
-
 #content {
   display: flex;
   width: 100%;
@@ -262,6 +274,7 @@ h1{
   display: flex;
   width: 100%;
   float: none;
+  padding: 0px;
   }
 
 .backgroundimage {
@@ -274,14 +287,6 @@ h1{
 
 /* laptop */
 @media all and (max-width: 1080px) {
-
-  ul {
-   text-align: center;
-   padding-left: 335px;
-   padding-bottom: 10px;
-   overflow: hidden;
-   display: inline-block;
-  }
 
   .vignette {
      text-align: center;
@@ -317,13 +322,6 @@ h1{
       display: block;
       margin-left: auto;
       margin-right: auto
-  }
-
-  h1 {
-    padding: 100px;
-    margin: 0;
-    font-size: 351%;
-    text-align: center;
   }
 
   .footer {
