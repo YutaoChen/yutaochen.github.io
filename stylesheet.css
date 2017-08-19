@@ -4,7 +4,6 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 ul {
@@ -175,7 +174,6 @@ h2 {
 }
 
 #social {
-	clear:both;
   padding-right: 670px;
   padding-left: 15px;
   padding-bottom: 0%;
@@ -199,13 +197,6 @@ h2 {
     opacity: .5;
 }
 
-#colorstrip{
-    width: 100%; height: 2px;
-    border-style: solid;
-    border-color: white;
-    background-color: white;
-}
-
 header #content #middle {
 	margin-bottom: 5px;
 }
@@ -219,10 +210,19 @@ header #content #middle {
 }
 
 /* mobile */
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
 
-#colorstrip{
-  box-sizing: border-box;
+  .vignette {
+  padding-bottom: 100px;
+  display: inline;
+}
+
+pre {
+  display: none;
+}
+
+#social {
+  display: none;
 }
 
 #pagewrap {
@@ -236,10 +236,9 @@ h2 {
 }
 
 p {
-  text-align: center;
-  font-size: 50px;
+  font-size: 100%;
   line-height: 25px;
-  padding-bottom: 30px;
+  padding: 10px;
 }
 
 body {
@@ -248,10 +247,9 @@ body {
 }
 
 h1{
-  padding: 0;
+  padding-bottom: 10px;
   font-size: 400px;
-  text-align: center;
-  margin: 0;
+  line-height: 100%;
 }
 
 #content {
@@ -275,7 +273,7 @@ h1{
 
 
 /* laptop */
-@media all and (max-width:1080px) {
+@media all and (max-width: 1080px) {
 
   ul {
    text-align: center;
