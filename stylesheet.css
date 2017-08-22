@@ -132,6 +132,7 @@ h2 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 100%;
     padding-top: 5px;
+    color: black;
 }
 
 #pagewrap {
@@ -277,6 +278,7 @@ ul li a {
 h2 {
   width: 100%;
   line-height: 110%;
+  color: black;
 }
 
 p {
