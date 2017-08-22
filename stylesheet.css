@@ -208,6 +208,14 @@ header #content #middle {
 /* mobile */
 @media all and (max-width: 414px) {
 
+  #projects {
+     -webkit-filter: none;
+     -moz-filter: none;
+     -ms-filter: none;
+     filter: none;
+     cursor: pointer;
+  }
+
   html,body
 {
     width: 100%;
@@ -310,6 +318,7 @@ p {
   .cgtntime {
     padding-bottom: 40px;
     text-align: center;
+    padding-left: 19px;
   }
 
 }
