@@ -304,6 +304,11 @@ p {
 
 #projects {
   padding-right: 10px;
+  width: 300px;
+}
+
+#projects img{
+  width: 300px;
 }
 
 #middle {
