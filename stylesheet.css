@@ -70,7 +70,7 @@ p {
   height:100%;
 }
 
-#projects {
+.projects {
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
@@ -80,7 +80,7 @@ p {
    box-shadow: 7px 7px 28px -1px rgba(0,0,0,0.75);
 }
 
-#projects:hover {
+.projects:hover {
    -webkit-filter: none;
    -moz-filter: none;
    -ms-filter: none;
@@ -89,12 +89,12 @@ p {
 }
 
 .img-with-text {
-    text-align: inherit;
+    text-align: justify;
     width: 400px;
 }
 
 .img-with-text img {
-    display: flex;
+    display: block;
     margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ h2 {
 
 #pagewrap {
 	padding: 20px;
-  width: 960px;
+  width: 1080px;
   margin: 20px auto;
   padding-left: 40px;
   padding-right: 250px;
@@ -147,20 +147,19 @@ h2 {
 
 #content {
   flex:2;
-	width: 280px;
 	float: left;
   padding: 5px 15px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 #middle {
   flex:2;
-	width: 280px; /* Account for margins + border values */
+	width: 400px; /* Account for margins + border values */
 	float: left;
   padding: 5px 15px;
-  padding-left: 140px;
+  padding-left: 70px;
   margin: 0px 5px 5px 5px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 #social {
@@ -206,16 +205,10 @@ header #content #middle {
    background:#6cf;
 }
 
-
-#projects img{
-   width: 400px;
-   height: 235px;
-}
-
 /* mobile */
 @media all and (max-width: 414px) {
 
-  #projects {
+  .projects {
      -webkit-filter: none;
      -moz-filter: none;
      -ms-filter: none;
@@ -300,15 +293,6 @@ p {
   padding-top: 30px;
   padding-left: 8px;
   margin-right: 10px;
-}
-
-#projects {
-  padding-right: 10px;
-  width: 300px;
-}
-
-#projects img{
-  width: 300px;
 }
 
 #middle {
