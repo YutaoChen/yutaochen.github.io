@@ -336,7 +336,7 @@ h2 {
 p {
   font-size: 75%;
   line-height: 25px;
-  padding: 0px;
+  padding: 7px;
 }
 
 #content {
@@ -371,6 +371,20 @@ p {
     padding-left: 19px;
   }
 
+}
+
+@media all and (min-width: 769px) {
+
+.menu {
+  display:none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cross {
+  display: none;
 }
 
 
@@ -436,15 +450,4 @@ p {
     padding: 5px 15px;
   }
 
-  .menu {
-    display:none;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .cross {
-    display: none;
-  }
 }
