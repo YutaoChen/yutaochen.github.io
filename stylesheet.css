@@ -254,6 +254,11 @@ header #content #middle {
    background:#6cf;
 }
 
+
+
+
+
+
 /* mobile */
 @media all and (max-width: 768px) {
 
@@ -262,7 +267,7 @@ header #content #middle {
   }
 
   #socialicons {
-    width: 20px;
+    width: 25px;
     padding-left: 10px;
     padding-right: 10px;
   }
