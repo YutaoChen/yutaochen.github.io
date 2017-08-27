@@ -137,7 +137,7 @@ p {
 
 .img-with-text {
     text-align: justify;
-    width: 400px;
+    width: 100%;
     margin: 0px;
 }
 
@@ -199,7 +199,7 @@ h2 {
 .right-half {
   flex: 1;
   padding-right: 90px;
-  padding-bottom: 300px;
+  padding-bottom: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,6 +249,19 @@ h2 {
 
 /* mobile */
 @media all and (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-half {
+    text-align: center;
+  }
+
+  .right-half {
+    text-align: center;
+  }
+
 
   #social {
     display: none;
