@@ -205,7 +205,6 @@ h2 {
   justify-content: center;
 }
 
-
 #social {
   padding-right: 670px;
   padding-left: 15px;
@@ -250,18 +249,22 @@ h2 {
 /* mobile */
 @media all and (max-width: 768px) {
 
+  .left-half {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+
   .container {
     flex-direction: column;
   }
 
-  .left-half {
-    text-align: center;
-  }
-
   .right-half {
     text-align: center;
+    padding: 20px;
+    padding-top: 0px;
   }
-
 
   #social {
     display: none;
@@ -333,14 +336,18 @@ p {
   background-position: left left;
   }
 
-  .cgtnamerica img {
-  padding-left: 0px;
+.cgtnamerica img {
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding-top: 10%;
+  padding-left: 25%;
+  margin: 0px;
   }
 
-  .cgtntime {
-    padding-bottom: 40px;
-    text-align: center;
-    padding-left: 19px;
+.cgtntime {
+  padding-bottom: 40px;
+  text-align: center;
   }
 
 }
