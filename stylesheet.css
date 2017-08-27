@@ -6,7 +6,6 @@ html,body
     padding: 0px;
 }
 
-
 .hamburger{
   background:none;
   position:absolute;
@@ -37,6 +36,7 @@ html,body
   outline:none;
   z-index:10000000000000;
 }
+
 .menu{z-index:1000000; font-weight:bold; font-size:0.5em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:8px 0 8px 0; border-bottom:#dddddd 1px solid;}
@@ -138,6 +138,7 @@ p {
 .img-with-text {
     text-align: justify;
     width: 400px;
+    margin: 0px;
 }
 
 .img-with-text img {
@@ -182,32 +183,28 @@ h2 {
     color: black;
 }
 
-#pagewrap {
-	padding: 20px;
-  width: 1080px;
-  margin: 20px auto;
-  padding-left: 40px;
-  padding-right: 250px;
+/* Pattern styles */
+.container {
   display: flex;
-  flex-wrap: wrap;
 }
 
-#content {
-  flex:2;
-	float: left;
-  padding: 5px 15px;
-  flex-wrap: wrap;
+.left-half {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#middle {
-  flex:2;
-	width: 400px; /* Account for margins + border values */
-	float: left;
-  padding: 5px 15px;
-  padding-left: 70px;
-  margin: 0px 5px 5px 5px;
-  flex-wrap: wrap;
+.right-half {
+  flex: 1;
+  padding-right: 90px;
+  padding-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 #social {
   padding-right: 670px;
@@ -238,10 +235,6 @@ h2 {
     border-style: solid;
     border-color: grey;
     background-color: white;
-}
-
-header #content #middle {
-	margin-bottom: 5px;
 }
 
 #footer {
@@ -307,13 +300,6 @@ pre {
   display: none;
 }
 
-#pagewrap {
-  padding: 0px;
-  display: flex;
-  width: 100%;
-  line-height: 30%;
-}
-
 h2 {
   width: 100%;
   line-height: 110%;
@@ -328,23 +314,6 @@ p {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-#content {
-  display: flex;
-  width: 100%;
-  float: none;
-  padding-top: 30px;
-  padding-left: 8px;
-  margin-right: 10px;
-}
-
-#middle {
-  display: flex;
-  width: 100%;
-  float: none;
-  padding: 0px;
-  margin-left: 8px;
-  }
 
 .backgroundimage {
   background: url(1.png) fixed;
