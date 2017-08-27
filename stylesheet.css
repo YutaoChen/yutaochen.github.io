@@ -26,7 +26,7 @@ html,body
   position:absolute;
   top:0px;
   right:0;
-  padding:7px 15px 0px 15px;
+  padding:7px 15px 15px 15px;
   color:#3E3A39;
   border:0;
   font-size:3em;
@@ -125,6 +125,7 @@ p {
    filter: gray;
    transition: 0.5s ease-in-out;
    box-shadow: 7px 7px 28px -1px rgba(0,0,0,0.75);
+   -webkit-overflow-scrolling: touch;
 }
 
 .projects:hover {
@@ -133,6 +134,7 @@ p {
    -ms-filter: none;
    filter: none;
    cursor: pointer;
+   -webkit-overflow-scrolling: touch;
 }
 
 .img-with-text {
@@ -157,6 +159,7 @@ h1 {
     -ms-transition:     color 1s;
     -o-transition:      color 1s;
     transition:         color 1s;
+    -webkit-overflow-scrolling: touch;
     text-decoration: none;
 }
 
@@ -248,6 +251,10 @@ h2 {
 
 /* mobile */
 @media all and (max-width: 768px) {
+
+  div {
+    -webkit-overflow-scrolling: touch;
+  }
 
   .left-half {
     padding: 20px;
