@@ -126,6 +126,7 @@ p {
    transition: 0.5s ease-in-out;
    box-shadow: 7px 7px 28px -1px rgba(0,0,0,0.75);
    -webkit-overflow-scrolling: touch;
+   -webkit-overflow-scrolling: auto; /* stop scrolling immediately */
 }
 
 .projects:hover {
@@ -135,6 +136,7 @@ p {
    filter: none;
    cursor: pointer;
    -webkit-overflow-scrolling: touch;
+   -webkit-overflow-scrolling: auto; /* stop scrolling immediately */
 }
 
 .img-with-text {
@@ -252,10 +254,6 @@ h2 {
 /* mobile */
 @media all and (max-width: 768px) {
 
-  div {
-    -webkit-overflow-scrolling: touch;
-  }
-
   .left-half {
     padding: 20px;
     text-align: center;
@@ -358,6 +356,8 @@ p {
   }
 
 }
+
+
 
 @media all and (min-width: 769px) {
 
