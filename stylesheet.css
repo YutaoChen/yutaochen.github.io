@@ -21,12 +21,13 @@ html,body
   outline:none;
   z-index:10000000000000;
 }
+
 .cross{
   background:none;
   position:absolute;
   top:0px;
-  right:0;
-  padding:7px 15px 15px 15px;
+  right:2px;
+  padding:0px 15px 15px 15px;
   color:#3E3A39;
   border:0;
   font-size:3em;
