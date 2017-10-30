@@ -211,6 +211,26 @@ h2 {
   justify-content: center;
 }
 
+
+.left-half1 {
+  flex: 1;
+  padding-top: 10%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-half1 {
+  flex: 1;
+  padding-right: 90px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 #social {
   padding-right: 670px;
   padding-left: 15px;
@@ -232,6 +252,17 @@ h2 {
 }
 
 .cgtnamerica img:hover {
+    opacity: .5;
+}
+
+.richcon img {
+    height: 90px;
+    width: auto;
+    margin: 65px;
+    margin-bottom: 10px;
+}
+
+.richcon img:hover {
     opacity: .5;
 }
 
