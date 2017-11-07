@@ -141,6 +141,7 @@ p {
 }
 
 .img-with-text {
+    padding-left: 4%;
     text-align: center;
     display: inline-block;
     width: 85%;
@@ -257,8 +258,16 @@ h3 {
 /* mobile */
 @media all and (max-width: 768px) {
 
+  .img-with-text {
+      padding-left: 0px;
+      width: 100%;
+  }
+
   .left-half {
-    padding: 20px;
+    padding: 5%;
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
     padding-left: 0;
     text-align: center;
     justify-content: center;
@@ -271,9 +280,10 @@ h3 {
   }
 
   .right-half {
+    width: 100%;
     text-align: center;
     padding-left: 0;
-    padding: 20px;
+    padding: 0px;
     padding-top: 0px;
     justify-content: center;
   }
@@ -329,16 +339,17 @@ pre {
 }
 
 h2 {
-  width: 100%;
-  line-height: 110%;
-  color: black;
-  padding-left: 10px;
+  width: 90%;
+  padding-left: 5%;
   font-size: 95%;
+  padding-right: 10%;
+  overflow: hidden;
+  text-align: justify;
 }
 
 h3 {
-  padding-left: 10px;
-  font-size: 80%
+  padding-left: 5%;
+  font-size: 80%;
 }
 
 p {
@@ -353,6 +364,7 @@ p {
 .backgroundimage {
   background: url(1.png) fixed;
   background-position: left left;
+  background-attachment: initial;
   }
 
 }
