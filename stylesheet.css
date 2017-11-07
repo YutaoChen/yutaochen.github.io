@@ -333,10 +333,12 @@ h2 {
   line-height: 110%;
   color: black;
   padding-left: 10px;
+  font-size: 95%;
 }
 
 h3 {
   padding-left: 10px;
+  font-size: 80%
 }
 
 p {
