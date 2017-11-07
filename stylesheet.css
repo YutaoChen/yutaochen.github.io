@@ -197,7 +197,8 @@ h1:hover {
 
 h2 {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: bold;
     padding-top: 5px;
     padding-left: 35px;
     color: black;
@@ -219,7 +220,7 @@ h3 {
 
 .left-half {
   flex: 1;
-  padding: 50px;
+  padding: 20px;
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -228,7 +229,7 @@ h3 {
 
 .right-half {
   flex: 1;
-  padding-right: 90px;
+  padding-right: 20px;
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -260,6 +261,7 @@ h3 {
 
   .left-half {
     padding: 20px;
+    padding-left: 0;
     text-align: justify;
     padding-bottom: 0px;
     padding-top: 50px;
@@ -271,6 +273,7 @@ h3 {
 
   .right-half {
     text-align: center;
+    padding-left: 0;
     padding: 20px;
     padding-top: 0px;
   }
