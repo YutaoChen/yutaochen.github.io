@@ -57,7 +57,7 @@ html,body
 ul {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 35px;
   padding-bottom: 10px;
   padding-left: 95px;
   overflow: hidden;
@@ -319,7 +319,7 @@ h3 {
 }
 
 header {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
   h1{
@@ -328,7 +328,7 @@ header {
     font-size: 400%;
     line-height: 100%;
     margin-bottom: 0px;
-    padding-top: 100px;
+    padding-top: 10px;
   }
 
   .vignette {
