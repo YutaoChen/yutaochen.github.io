@@ -57,8 +57,7 @@ html,body
 ul {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   padding-left: 95px;
   overflow: hidden;
   box-sizing: border-box;
