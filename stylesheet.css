@@ -198,6 +198,8 @@ h1:hover {
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
     font-weight: bold;
     padding-top: 5px;
     padding-left: 25px;
@@ -340,15 +342,6 @@ h3 {
 
 pre {
   display: none;
-}
-
-h2 {
-  width: 90%;
-  padding-left: 5%;
-  font-size: 95%;
-  padding-right: 10%;
-  overflow: hidden;
-  text-align: justify;
 }
 
 h3 {
