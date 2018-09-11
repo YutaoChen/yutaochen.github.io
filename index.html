@@ -208,7 +208,6 @@
           </div>
         </div>
 	-->
-
 			</div>
 			<!-- /.row -->
 
@@ -222,26 +221,5 @@
 
 		</div><!-- /.container -->
 
-
-		<script type="text/javascript" charset="utf-8">
-			jQuery(document).ready(function($){
-
-				//This is JavaScript/jQuery---
-
-				//smooth scroll effect
-				jQuery.extend(jQuery.easing,{easeInOutCubic: function(e, f, a, h, g) {if ((f /= g / 2) < 1) {return h / 2 * f * f * f + a;} return h / 2 * ((f -= 2) * f * f + 2) + a;}});
-
-				//set active nav element to home when page loads
-				if($(window).scrollTop() < 5){
-					$('ul.navbar-nav li').eq(0).addClass('active');
-				}
-
-				//set columns automatically to number of divs inside each .row
-				$('.row').each(function(i, elm){
-					$(elm).children('div').addClass('col-sm-' + 12/Math.floor(parseInt( $(elm).children('div').length )));
-				});
-
-			});
-		</script>
 </body>
 </html>
