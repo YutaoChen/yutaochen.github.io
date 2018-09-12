@@ -103,7 +103,9 @@
  .offset-lg-8{margin-left:66.666667%}
  .offset-lg-9{margin-left:75%}
  .offset-lg-10{margin-left:83.333333%}
- .offset-lg-11{margin-left:91.666667%}}
+ .offset-lg-11{margin-left:91.666667%}
+ .publication{margin:0px; padding-left: 0; padding-top: 2px}
+}
 
  @media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
  .col-xl-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
