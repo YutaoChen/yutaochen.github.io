@@ -11,7 +11,7 @@
       text.mono {
         font-size: 9pt;
         font-family: Consolas, courier;
-        fill: #aaa;
+        fill: #000;
       }
 
       text.axis-workweek {
@@ -22,31 +22,39 @@
         fill: #000;
       }
     </style>
-    <script src="d3.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
   </head>
   <body>
     <div id="chart"></div>
 
     <script type="text/javascript">
-      const margin = { top: 50, right: 0, bottom: 100, left: 30 },
+      let margin = { top: 60, right: 0, bottom: 100, left: 30 },
           width = 960 - margin.left - margin.right,
-          height = 430 - margin.top - margin.bottom,
+          height = 470 - margin.top - margin.bottom,
           gridSize = Math.floor(width / 24),
           legendElementWidth = gridSize*2,
           buckets = 9,
-          colors = ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"], // alternatively colorbrewer.YlGnBu[9]
-          days = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+          colors = ["#fff7ec","#fee8c8","#fdd49e","#fdbb84","#fc8d59","#ef6548","#d7301f","#b30000","#7f0000"], // alternatively colorbrewer.YlGnBu[9]
+          days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
           times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"];
-          datasets = ["data.tsv"];
+          datasets = ["data.csv"];
 
 
-      const svg = d3.select("#chart").append("svg")
+      let svg = d3.select("#chart").append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      const dayLabels = svg.selectAll(".dayLabel")
+          svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "20px")
+        .style("padding", "100px")
+        .text("Fatal Accidents Reported by Mine Operators and Contractors since 2000");
+
+      let dayLabels = svg.selectAll(".dayLabel")
           .data(days)
           .enter().append("text")
             .text(function (d) { return d; })
@@ -56,7 +64,7 @@
             .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
             .attr("class", (d, i) => ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis"));
 
-      const timeLabels = svg.selectAll(".timeLabel")
+      let timeLabels = svg.selectAll(".timeLabel")
           .data(times)
           .enter().append("text")
             .text((d) => d)
@@ -66,7 +74,7 @@
             .attr("transform", "translate(" + gridSize / 2 + ", -6)")
             .attr("class", (d, i) => ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-worktime" : "timeLabel mono axis"));
 
-      const type = (d) => {
+      let type = (d) => {
         return {
           day: +d.day,
           hour: +d.hour,
@@ -74,39 +82,38 @@
         };
       };
 
-      const heatmapChart = function(tsvFile) {
-        d3.tsv(tsvFile, type, (error, data) => {
-          const colorScale = d3.scaleQuantile()
+      let heatmapChart = function(csvFile) {
+        d3.csv(csvFile, type, (error, data) => {
+          let colorScale = d3.scale.quantile()
             .domain([0, buckets - 1, d3.max(data, (d) => d.value)])
             .range(colors);
 
-          const cards = svg.selectAll(".hour")
-              .data(data, (d) => d.day+':'+d.hour);
+          let cards = svg.selectAll(".hour")
+              .data(data, function(d) {return d.day+':'+d.hour;});
 
-          cards.append("title");
-
-          cards.enter().append("rect")
-              .attr("x", (d) => (d.hour - 1) * gridSize)
-              .attr("y", (d) => (d.day - 1) * gridSize)
+          cards.enter()
+              .append("rect")
+              .attr("x", function(d) { return (d.hour - 1) * gridSize; })
+              .attr("y", function(d) { return (d.day - 1) * gridSize; })
               .attr("rx", 4)
               .attr("ry", 4)
               .attr("class", "hour bordered")
               .attr("width", gridSize)
               .attr("height", gridSize)
               .style("fill", colors[0])
-            .merge(cards)
-              .transition()
-              .duration(1000)
-              .style("fill", (d) => colorScale(d.value));
+              .append("title");
+
+          cards.transition().duration(1500)
+              .style("fill", function(d) { return colorScale(d.value); });
 
           cards.select("title").text((d) => d.value);
 
           cards.exit().remove();
 
-          const legend = svg.selectAll(".legend")
+          let legend = svg.selectAll(".legend")
               .data([0].concat(colorScale.quantiles()), (d) => d);
 
-          const legend_g = legend.enter().append("g")
+          let legend_g = legend.enter().append("g")
               .attr("class", "legend");
 
           legend_g.append("rect")
@@ -121,6 +128,22 @@
             .text((d) => "≥ " + Math.round(d))
             .attr("x", (d, i) => legendElementWidth * i)
             .attr("y", height + gridSize);
+
+          legend_g.append("text")
+          .attr("x", legendElementWidth)
+          .attr("y", height - margin.left/3)
+          .attr("text-anchor", "middle")
+          .style("font-size", "13px")
+          .style("font-color", "#999999")
+          .text("Number of Fatal Accidents");
+
+          legend_g.append("text")
+          .attr("x", width - legendElementWidth * 1.7)
+          .attr("y", height - margin.left)
+          .attr("text-anchor", "middle")
+          .style("font-size", "12px")
+          .style("text-decoration", "italic")
+          .text("Source: Mine Safety and Health Administration");
 
           legend.exit().remove();
         });
