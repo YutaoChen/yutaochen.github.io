@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
       rect.bordered {
         stroke: #E6E6E6;
@@ -52,6 +53,7 @@
         .attr("text-anchor", "middle")
         .style("font-size", "20px")
         .style("padding", "100px")
+        .style("font-family", "'Roboto', sans-serif") 
         .text("Fatal Accidents Reported by Mine Operators and Contractors since 2000");
 
       let dayLabels = svg.selectAll(".dayLabel")
@@ -133,6 +135,7 @@
           .attr("x", legendElementWidth)
           .attr("y", height - margin.left/3)
           .attr("text-anchor", "middle")
+          .style("font-family", "'Roboto', sans-serif")
           .style("font-size", "13px")
           .style("font-color", "#999999")
           .text("Number of Fatal Accidents");
@@ -141,6 +144,7 @@
           .attr("x", width - legendElementWidth * 1.7)
           .attr("y", height - margin.left)
           .attr("text-anchor", "middle")
+          .style("font-family", "'Roboto', sans-serif")
           .style("font-size", "12px")
           .style("text-decoration", "italic")
           .text("Source: Mine Safety and Health Administration");
