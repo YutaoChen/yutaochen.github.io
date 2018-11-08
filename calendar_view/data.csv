@@ -1,6 +1,6 @@
 day,hour,value,notes,value_1
 6,1,3,,3
-2,1,3,,2
+2,1,3,"<br> On August 28, 2000, <strong style='color:firebrick;'>2</strong> miners were killed in a hoisting accident at <strong style='color:steelblue;'>Mine No.2</strong> near Pilgrim, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>Alliance Resource Partners L.P.</strong> and operated by <strong style='color:steelblue;'>Excel Mining LLC</strong>.",2
 7,1,5,"<br> On May 20, 2006, <strong style='color:firebrick;'>5</strong> miners were killed in an explosion at <strong style='color:steelblue;'>Darby Mine No.1</strong> near Holmes Mill, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>John D. North</strong> and <strong style='color:steelblue;'>Ralph Napier</strong> and operated by <strong style='color:steelblue;'>Kentucky Darby, LLC.</strong>",1
 1,1,2,,2
 5,1,2,,2
@@ -9,9 +9,9 @@ day,hour,value,notes,value_1
 2,2,2,,2
 7,2,2,,2
 1,2,2,,2
-5,2,4,,3
+5,2,4,"<br> On August 12, 2010, <strong style='color:firebrick;'>2</strong> miners were killed in a falling material accident at <strong style='color:steelblue;'>Meikle Mine</strong> near Carlin, Nevada.<br><br>  The mine was owned by <strong style='color:steelblue;'>Barrick Gold Corp</strong> and operated by <strong style='color:steelblue;'>Barrick Goldstrike Mine Inc.</strong>",3
 3,2,4,,4
-4,2,3,,1
+4,2,3,"<br> On January 22, 2003, <strong style='color:firebrick;'>3</strong> miners were killed in an explosion at <strong style='color:steelblue;'>Marshall County Mine</strong> near Cameron, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>CONSOL Energy Inc.</strong> and operated by <strong style='color:steelblue;'>McElroy Coal Company</strong>.",1
 6,3,2,,2
 2,3,6,"<br> On August 6, 2007, <strong style='color:firebrick;'>6</strong> miners were killed in a collapse at <strong style='color:steelblue;'>Crandall Canyon Mine</strong> near Huntington, Utah.<br><br>  The mine was owned by <strong style='color:steelblue;'>Robert E. Murray</strong> and operated by <strong style='color:steelblue;'>Genwal Resources Inc.</strong>",1
 7,3,2,,2
@@ -34,21 +34,21 @@ day,hour,value,notes,value_1
 5,6,2,,2
 3,6,1,,1
 4,6,4,,4
-6,7,3,,2
+6,7,3,"<br> On October 28, 2011, <strong style='color:firebrick;'>2</strong> miners were killed from falling at <strong style='color:steelblue;'>Equality Mine</strong> near Centertown, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>Armstrong Energy Inc.</strong> and operated by <strong style='color:steelblue;'>Armstrong Coal Company, Inc.</strong>",2
 2,7,17,"<br> On January 2, 2006, <strong style='color:firebrick;'>12</strong> miners were killed in an explosion at <strong style='color:steelblue;'>Sago Mine</strong> near Tallmansville, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>International Coal Group, Inc.</strong> and operated by <strong style='color:steelblue;'>Wolf Run Mining Company</strong>.",6
 7,7,4,,4
 1,7,2,,2
 5,7,3,,3
 3,7,1,,1
-4,7,7,,6
+4,7,7,"<br> On September 17, 2003, <strong style='color:firebrick;'>2</strong> miners were killed from powered haulage accident at <strong style='color:steelblue;'>Twilight MTR Surface Mine</strong> near Twilight, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>Massey Energy Company</strong> and operated by <strong style='color:steelblue;'>Progress Coal</strong>.",6
 6,8,5,,5
 2,8,6,,6
 7,8,1,,1
-1,8,3,,2
+1,8,3,"<br> On December 05, 2004, <strong style='color:firebrick;'>2</strong> miners were killed from machinery accident at <strong style='color:steelblue;'>Robinson Operation</strong> near Ruth, Nevada.<br><br>  The mine was owned by <strong style='color:steelblue;'>Quadra Mining Ltd.</strong> and operated by <strong style='color:steelblue;'>Robinson Nevada Mining Company</strong>.",2
 5,8,4,,4
 3,8,7,,7
 4,8,6,,6
-6,9,18,,17
+6,9,18,"<br> On April 11, 2014, <strong style='color:firebrick;'>2</strong> miners were killed from falling at <strong style='color:steelblue;'>Mississippi Lime Company-Ste. Genevieve</strong> near Genievieve, Missouri.<br><br>  The mine was owned by <strong style='color:steelblue;'>Margaret J. Heckman</strong> and operated by <strong style='color:steelblue;'>Mississippi Lime Company</strong>.",17
 2,9,7,,7
 7,9,7,,7
 5,9,15,,15
@@ -60,26 +60,26 @@ day,hour,value,notes,value_1
 5,10,7,,7
 3,10,12,,12
 4,10,6,,6
-6,11,18,,16
+6,11,18,"<br> On August 10, 2007, <strong style='color:firebrick;'>3</strong> miners were killed while digging a shaft at <strong style='color:steelblue;'>Gibson Mine</strong> near Princeton, Indiana.<br><br>  The mine was owned by <strong style='color:steelblue;'>Alliance Resources Partners, L.P.</strong> and operated by <strong style='color:steelblue;'>Gibson County Coal, LLC</strong>.",16
 2,11,14,,14
-7,11,7,,6
+7,11,7,"<br> On January 13, 2007, <strong style='color:firebrick;'>2</strong> miners were killed from falling at <strong style='color:steelblue;'>Cucumber Mine</strong> near Cucumber, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>Alpha Natural Resources, Inc.</strong> and operated by <strong style='color:steelblue;'>Brooks Run Mining Company, LLC</strong>.",6
 1,11,2,,2
 5,11,9,,9
-3,11,12,,11
+3,11,12,"<br> On April 17, 2007, <strong style='color:firebrick;'>2</strong> miners were killed from falling at <strong style='color:steelblue;'>Job #3</strong> near Barton, Maryland.<br><br>  The mine was owned by <strong style='color:steelblue;'>George R. Beener</strong> and operated by <strong style='color:steelblue;'>Tri-Star Mining, Inc</strong>.",11
 4,11,10,,10
-6,12,10,,9
+6,12,10,"<br> On June 3, 2016, <strong style='color:firebrick;'>2</strong> miners were killed from an inundation accident at <strong style='color:steelblue;'>Harmony Mine & Mill</strong> near Crystal Springs, Mississippi.<br><br>  The mine was owned by <strong style='color:steelblue;'>Heyward C. Green</strong> and operated by <strong style='color:steelblue;'>Green Brothers Gravel Company, Inc</strong>.",9
 2,12,10,,10
 7,12,6,,6
 1,12,3,,3
-5,12,12,,11
+5,12,12,"<br> On October 17, 2002, <strong style='color:firebrick;'>2</strong> miners were killed in a rescue related accident at <strong style='color:steelblue;'>Storm Exploration Decline</strong> near Elko, Nevada.<br><br>  The mine was owned by <strong style='color:steelblue;'>Barrick Gold Corporation</strong> and operated by <strong style='color:steelblue;'>Barrick Goldstrike Mines, Inc</strong>.",11
 3,12,12,,12
 4,12,10,,10
-6,13,17,,16
+6,13,17,"<br> On August 19, 2005, <strong style='color:firebrick;'>2</strong> miners were killed from a powered haulage accident at <strong style='color:steelblue;'>P-3 Hignite</strong> near Middlesboro, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>James River Coal Company</strong> and operated by <strong style='color:steelblue;'>Bell County Coal Corporation</strong>.",16
 2,13,7,,7
 7,13,4,,4
 1,13,4,,4
 5,13,9,,9
-3,13,11,,10
+3,13,11,"<br> On June 05, 2001, <strong style='color:firebrick;'>2</strong> miners were killed from falling at <strong style='color:steelblue;'>Galena</strong> near Wallace, Idaho.<br><br>  The mine was owned by <strong style='color:steelblue;'>Coeur Mining, Inc.</strong> and operated by <strong style='color:steelblue;'>U.S. Silver - Idaho, Inc.</strong>.",10
 4,13,12,,12
 6,14,13,,13
 2,14,16,,16
@@ -92,7 +92,7 @@ day,hour,value,notes,value_1
 7,15,9,,9
 1,15,1,,1
 5,15,12,,12
-3,15,13,,12
+3,15,13,"<br> On October 31, 2017, <strong style='color:firebrick;'>2</strong> miners were killed from a powered haulage accient at <strong style='color:steelblue;'>Marigold Mine</strong> near Valmy, Nevada.<br><br>  The mine was owned by <strong style='color:steelblue;'>SSR Mining Incorporated</strong> and operated by <strong style='color:steelblue;'>Marigold Mining Company</strong>.",12
 4,15,14,,14
 6,16,5,,5
 2,16,42,"<br> On April 5, 2010, <strong style='color:firebrick;'>29</strong> miners were killed in an explosion at the <strong style='color:steelblue;'>Upper Big Branch mine</strong> in Montcoal, West Virginia.<br><br> The mine was owned by the <strong style='color:steelblue;'>Massey Energy Company</strong> and operated by the <strong style='color:steelblue;'>Performance Coal Company</strong>.",14
@@ -111,13 +111,13 @@ day,hour,value,notes,value_1
 2,18,1,,1
 7,18,5,,5
 1,18,13,"<br> On September 23, 2001, <strong style='color:firebrick;'>13</strong> miners were killed in two separate explosions at the <strong style='color:steelblue;'>Jim Walter Resources, Inc. No.5 Mine</strong> near Brookwood, Alabama.<br><br> The mine was owned by <strong style='color:steelblue;'>Walter Energy, Inc.</strong> and operated by <strong style='color:steelblue;'>Jim Walter Resources, Inc.</strong>",1
-5,18,5,,4
+5,18,5,"<br> On January 19, 2006, <strong style='color:firebrick;'>2</strong> miners were killed from a fire at <strong style='color:steelblue;'>Aracoma Alma Mine #1</strong> near Lyburn, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>Massey Energy Company</strong> and operated by <strong style='color:steelblue;'>Aracoma Coal Company, LLC</strong>.",4
 3,18,2,,2
 4,18,5,,5
 6,19,1,,1
 2,19,5,,5
 7,19,4,,4
-5,19,7,,4
+5,19,7,"<br> On August 16, 2007, <strong style='color:firebrick;'>3</strong> rescue workers were killed during an effort to reach 6 men who have been trapped at <strong style='color:steelblue;'>Crandall Canyon Mine</strong> near Huntington, Utah.<br><br>  The mine was owned by <strong style='color:steelblue;'>Robert E. Murray</strong> and operated by <strong style='color:steelblue;'>Genwal Resources Inc.</strong> <br><br> On July 19, 2007, <strong style='color:firebrick;'>2</strong> miners were killed from a falling material accident at <strong style='color:steelblue;'>Nanuuq Gold Project</strong> near Nome, Alaska.<br><br>  The mine was owned by <strong style='color:steelblue;'>Novagold Resources, Inc</strong> and operated by <strong style='color:steelblue;'>Alaska Gold Company</strong>.",4
 3,19,3,,3
 4,19,8,,8
 6,20,4,,4
@@ -127,7 +127,7 @@ day,hour,value,notes,value_1
 3,20,4,,4
 4,20,3,,3
 6,21,7,,7
-2,21,6,,5
+2,21,6,"<br> On May 12, 2014, <strong style='color:firebrick;'>2</strong> miners were killed from a coal outburst at <strong style='color:steelblue;'>Black Stallion UG Mine</strong> near Wharton, West Virginia.<br><br>  The mine was owned by <strong style='color:steelblue;'>Patriot Coal Corporation</strong> and operated by <strong style='color:steelblue;'>Brody Mining, LLC</strong>.",5
 7,21,3,,3
 1,21,2,,2
 5,21,3,,3
@@ -139,15 +139,15 @@ day,hour,value,notes,value_1
 1,22,2,,2
 5,22,7,,7
 3,22,2,,2
-4,22,4,,3
+4,22,4,"<br> On August 3, 2005, <strong style='color:firebrick;'>2</strong> miners were killed from a material falling accident at <strong style='color:steelblue;'>D-14 Stillhouse</strong> near Cumberland, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>Cumberland Resources Corporation</strong> and operated by <strong style='color:steelblue;'>Stillhouse Mining, LLC</strong>.",3
 2,23,5,,5
 7,23,2,,2
 1,23,1,,1
 5,23,4,,4
 3,23,2,,2
-4,23,5,,4
+4,23,5,"<br> On April 28, 2010, <strong style='color:firebrick;'>2</strong> miners were killed from a roof fall at <strong style='color:steelblue;'>Dotiki Mine</strong> near Clay, Kentucky.<br><br>  The mine was owned by <strong style='color:steelblue;'>Alliance Resource Partners, L.P.</strong> and operated by <strong style='color:steelblue;'>Webster County Coal, LLC</strong>.",4
 6,24,1,,1
-2,24,5,,4
+2,24,5,"<br> On July 31, 2000, <strong style='color:firebrick;'>2</strong> miners were killed from explosions at <strong style='color:steelblue;'>Willow Creek Mine</strong> near Helper, Utah.<br><br>  The mine was owned by <strong style='color:steelblue;'>Rag Aktiengesellschaft</strong> and operated by <strong style='color:steelblue;'>Plateau Mining Corporation</strong>.",4
 7,24,3,,3
 1,24,3,,3
 5,24,5,,5
