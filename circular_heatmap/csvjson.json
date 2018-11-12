@@ -1,0 +1,1730 @@
+[
+  {
+    "year": 2000,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1434,
+    "disabilities": 13,
+    "fatalities": 7
+  },
+  {
+    "year": 2000,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1404,
+    "disabilities": 21,
+    "fatalities": 4
+  },
+  {
+    "year": 2000,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1556,
+    "disabilities": 20,
+    "fatalities": 5
+  },
+  {
+    "year": 2000,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1422,
+    "disabilities": 22,
+    "fatalities": 8
+  },
+  {
+    "year": 2000,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1607,
+    "disabilities": 32,
+    "fatalities": 7
+  },
+  {
+    "year": 2000,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1572,
+    "disabilities": 19,
+    "fatalities": 13
+  },
+  {
+    "year": 2000,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1556,
+    "disabilities": 18,
+    "fatalities": 3
+  },
+  {
+    "year": 2000,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1703,
+    "disabilities": 18,
+    "fatalities": 11
+  },
+  {
+    "year": 2000,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1589,
+    "disabilities": 18,
+    "fatalities": 6
+  },
+  {
+    "year": 2000,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1540,
+    "disabilities": 16,
+    "fatalities": 8
+  },
+  {
+    "year": 2000,
+    "month": 11,
+    "month_tx": "November",
+    "value": 1184,
+    "disabilities": 10,
+    "fatalities": 5
+  },
+  {
+    "year": 2000,
+    "month": 12,
+    "month_tx": "December",
+    "value": 1199,
+    "disabilities": 15,
+    "fatalities": 6
+  },
+  {
+    "year": 2001,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1461,
+    "disabilities": 16,
+    "fatalities": 1
+  },
+  {
+    "year": 2001,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1220,
+    "disabilities": 8,
+    "fatalities": 5
+  },
+  {
+    "year": 2001,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1350,
+    "disabilities": 4,
+    "fatalities": 6
+  },
+  {
+    "year": 2001,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1296,
+    "disabilities": 9,
+    "fatalities": 7
+  },
+  {
+    "year": 2001,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1420,
+    "disabilities": 11,
+    "fatalities": 3
+  },
+  {
+    "year": 2001,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1349,
+    "disabilities": 9,
+    "fatalities": 5
+  },
+  {
+    "year": 2001,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1575,
+    "disabilities": 7,
+    "fatalities": 4
+  },
+  {
+    "year": 2001,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1792,
+    "disabilities": 10,
+    "fatalities": 5
+  },
+  {
+    "year": 2001,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1373,
+    "disabilities": 16,
+    "fatalities": 3
+  },
+  {
+    "year": 2001,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1543,
+    "disabilities": 10,
+    "fatalities": 8
+  },
+  {
+    "year": 2001,
+    "month": 11,
+    "month_tx": "November",
+    "value": 1174,
+    "disabilities": 8,
+    "fatalities": 8
+  },
+  {
+    "year": 2001,
+    "month": 12,
+    "month_tx": "December",
+    "value": 998,
+    "disabilities": 11,
+    "fatalities": 4
+  },
+  {
+    "year": 2002,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1422,
+    "disabilities": 13,
+    "fatalities": 10
+  },
+  {
+    "year": 2002,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1201,
+    "disabilities": 10,
+    "fatalities": 7
+  },
+  {
+    "year": 2002,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1308,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2002,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1389,
+    "disabilities": 7,
+    "fatalities": 5
+  },
+  {
+    "year": 2002,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1244,
+    "disabilities": 7,
+    "fatalities": 5
+  },
+  {
+    "year": 2002,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1319,
+    "disabilities": 8,
+    "fatalities": 6
+  },
+  {
+    "year": 2002,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1378,
+    "disabilities": 11,
+    "fatalities": 2
+  },
+  {
+    "year": 2002,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1380,
+    "disabilities": 13,
+    "fatalities": 9
+  },
+  {
+    "year": 2002,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1183,
+    "disabilities": 7,
+    "fatalities": 5
+  },
+  {
+    "year": 2002,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1340,
+    "disabilities": 10,
+    "fatalities": 8
+  },
+  {
+    "year": 2002,
+    "month": 11,
+    "month_tx": "November",
+    "value": 993,
+    "disabilities": 12,
+    "fatalities": 2
+  },
+  {
+    "year": 2002,
+    "month": 12,
+    "month_tx": "December",
+    "value": 951,
+    "disabilities": 8,
+    "fatalities": 7
+  },
+  {
+    "year": 2003,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1147,
+    "disabilities": 10,
+    "fatalities": 6
+  },
+  {
+    "year": 2003,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1002,
+    "disabilities": 11,
+    "fatalities": 3
+  },
+  {
+    "year": 2003,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1157,
+    "disabilities": 4,
+    "fatalities": 4
+  },
+  {
+    "year": 2003,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1131,
+    "disabilities": 14,
+    "fatalities": 7
+  },
+  {
+    "year": 2003,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1092,
+    "disabilities": 10,
+    "fatalities": 2
+  },
+  {
+    "year": 2003,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1132,
+    "disabilities": 10,
+    "fatalities": 8
+  },
+  {
+    "year": 2003,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1165,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2003,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1180,
+    "disabilities": 18,
+    "fatalities": 3
+  },
+  {
+    "year": 2003,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1167,
+    "disabilities": 12,
+    "fatalities": 8
+  },
+  {
+    "year": 2003,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1136,
+    "disabilities": 15,
+    "fatalities": 5
+  },
+  {
+    "year": 2003,
+    "month": 11,
+    "month_tx": "November",
+    "value": 908,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2003,
+    "month": 12,
+    "month_tx": "December",
+    "value": 907,
+    "disabilities": 11,
+    "fatalities": 1
+  },
+  {
+    "year": 2004,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1035,
+    "disabilities": 6,
+    "fatalities": 4
+  },
+  {
+    "year": 2004,
+    "month": 2,
+    "month_tx": "February",
+    "value": 985,
+    "disabilities": 12,
+    "fatalities": 7
+  },
+  {
+    "year": 2004,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1144,
+    "disabilities": 10,
+    "fatalities": 4
+  },
+  {
+    "year": 2004,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1129,
+    "disabilities": 15,
+    "fatalities": 3
+  },
+  {
+    "year": 2004,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1162,
+    "disabilities": 11,
+    "fatalities": 3
+  },
+  {
+    "year": 2004,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1329,
+    "disabilities": 7,
+    "fatalities": 7
+  },
+  {
+    "year": 2004,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1326,
+    "disabilities": 9,
+    "fatalities": 2
+  },
+  {
+    "year": 2004,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1294,
+    "disabilities": 5,
+    "fatalities": 6
+  },
+  {
+    "year": 2004,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1204,
+    "disabilities": 9,
+    "fatalities": 5
+  },
+  {
+    "year": 2004,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1192,
+    "disabilities": 11,
+    "fatalities": 4
+  },
+  {
+    "year": 2004,
+    "month": 11,
+    "month_tx": "November",
+    "value": 983,
+    "disabilities": 11,
+    "fatalities": 2
+  },
+  {
+    "year": 2004,
+    "month": 12,
+    "month_tx": "December",
+    "value": 953,
+    "disabilities": 14,
+    "fatalities": 7
+  },
+  {
+    "year": 2005,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1134,
+    "disabilities": 12,
+    "fatalities": 2
+  },
+  {
+    "year": 2005,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1096,
+    "disabilities": 13,
+    "fatalities": 1
+  },
+  {
+    "year": 2005,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1148,
+    "disabilities": 9,
+    "fatalities": 6
+  },
+  {
+    "year": 2005,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1201,
+    "disabilities": 13,
+    "fatalities": 5
+  },
+  {
+    "year": 2005,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1212,
+    "disabilities": 10,
+    "fatalities": 5
+  },
+  {
+    "year": 2005,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1254,
+    "disabilities": 14,
+    "fatalities": 7
+  },
+  {
+    "year": 2005,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1258,
+    "disabilities": 18,
+    "fatalities": 3
+  },
+  {
+    "year": 2005,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1423,
+    "disabilities": 8,
+    "fatalities": 7
+  },
+  {
+    "year": 2005,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1246,
+    "disabilities": 12,
+    "fatalities": 5
+  },
+  {
+    "year": 2005,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1248,
+    "disabilities": 12,
+    "fatalities": 4
+  },
+  {
+    "year": 2005,
+    "month": 11,
+    "month_tx": "November",
+    "value": 1041,
+    "disabilities": 15,
+    "fatalities": 6
+  },
+  {
+    "year": 2005,
+    "month": 12,
+    "month_tx": "December",
+    "value": 984,
+    "disabilities": 6,
+    "fatalities": 5
+  },
+  {
+    "year": 2006,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1178,
+    "disabilities": 12,
+    "fatalities": 7
+  },
+  {
+    "year": 2006,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1098,
+    "disabilities": 7,
+    "fatalities": 5
+  },
+  {
+    "year": 2006,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1183,
+    "disabilities": 10,
+    "fatalities": 1
+  },
+  {
+    "year": 2006,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1036,
+    "disabilities": 13,
+    "fatalities": 9
+  },
+  {
+    "year": 2006,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1225,
+    "disabilities": 11,
+    "fatalities": 9
+  },
+  {
+    "year": 2006,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1236,
+    "disabilities": 13,
+    "fatalities": 3
+  },
+  {
+    "year": 2006,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1277,
+    "disabilities": 10,
+    "fatalities": 6
+  },
+  {
+    "year": 2006,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1475,
+    "disabilities": 9,
+    "fatalities": 2
+  },
+  {
+    "year": 2006,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1178,
+    "disabilities": 5,
+    "fatalities": 1
+  },
+  {
+    "year": 2006,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1188,
+    "disabilities": 6,
+    "fatalities": 8
+  },
+  {
+    "year": 2006,
+    "month": 11,
+    "month_tx": "November",
+    "value": 1068,
+    "disabilities": 22,
+    "fatalities": 4
+  },
+  {
+    "year": 2006,
+    "month": 12,
+    "month_tx": "December",
+    "value": 894,
+    "disabilities": 7,
+    "fatalities": 2
+  },
+  {
+    "year": 2007,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1190,
+    "disabilities": 9,
+    "fatalities": 4
+  },
+  {
+    "year": 2007,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1080,
+    "disabilities": 2,
+    "fatalities": 2
+  },
+  {
+    "year": 2007,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1224,
+    "disabilities": 16,
+    "fatalities": 3
+  },
+  {
+    "year": 2007,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1035,
+    "disabilities": 13,
+    "fatalities": 7
+  },
+  {
+    "year": 2007,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1218,
+    "disabilities": 9,
+    "fatalities": 0
+  },
+  {
+    "year": 2007,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1182,
+    "disabilities": 14,
+    "fatalities": 4
+  },
+  {
+    "year": 2007,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1212,
+    "disabilities": 13,
+    "fatalities": 8
+  },
+  {
+    "year": 2007,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1390,
+    "disabilities": 11,
+    "fatalities": 7
+  },
+  {
+    "year": 2007,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1172,
+    "disabilities": 11,
+    "fatalities": 6
+  },
+  {
+    "year": 2007,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1257,
+    "disabilities": 11,
+    "fatalities": 7
+  },
+  {
+    "year": 2007,
+    "month": 11,
+    "month_tx": "November",
+    "value": 909,
+    "disabilities": 12,
+    "fatalities": 4
+  },
+  {
+    "year": 2007,
+    "month": 12,
+    "month_tx": "December",
+    "value": 891,
+    "disabilities": 10,
+    "fatalities": 3
+  },
+  {
+    "year": 2008,
+    "month": 1,
+    "month_tx": "January",
+    "value": 1150,
+    "disabilities": 12,
+    "fatalities": 6
+  },
+  {
+    "year": 2008,
+    "month": 2,
+    "month_tx": "February",
+    "value": 1068,
+    "disabilities": 15,
+    "fatalities": 5
+  },
+  {
+    "year": 2008,
+    "month": 3,
+    "month_tx": "March",
+    "value": 1063,
+    "disabilities": 4,
+    "fatalities": 2
+  },
+  {
+    "year": 2008,
+    "month": 4,
+    "month_tx": "April",
+    "value": 1108,
+    "disabilities": 10,
+    "fatalities": 4
+  },
+  {
+    "year": 2008,
+    "month": 5,
+    "month_tx": "May",
+    "value": 1109,
+    "disabilities": 7,
+    "fatalities": 7
+  },
+  {
+    "year": 2008,
+    "month": 6,
+    "month_tx": "June",
+    "value": 1167,
+    "disabilities": 9,
+    "fatalities": 4
+  },
+  {
+    "year": 2008,
+    "month": 7,
+    "month_tx": "July",
+    "value": 1245,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2008,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1181,
+    "disabilities": 10,
+    "fatalities": 4
+  },
+  {
+    "year": 2008,
+    "month": 9,
+    "month_tx": "September",
+    "value": 1148,
+    "disabilities": 14,
+    "fatalities": 3
+  },
+  {
+    "year": 2008,
+    "month": 10,
+    "month_tx": "October",
+    "value": 1143,
+    "disabilities": 9,
+    "fatalities": 11
+  },
+  {
+    "year": 2008,
+    "month": 11,
+    "month_tx": "November",
+    "value": 836,
+    "disabilities": 8,
+    "fatalities": 1
+  },
+  {
+    "year": 2008,
+    "month": 12,
+    "month_tx": "December",
+    "value": 861,
+    "disabilities": 10,
+    "fatalities": 3
+  },
+  {
+    "year": 2009,
+    "month": 1,
+    "month_tx": "January",
+    "value": 983,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2009,
+    "month": 2,
+    "month_tx": "February",
+    "value": 887,
+    "disabilities": 13,
+    "fatalities": 4
+  },
+  {
+    "year": 2009,
+    "month": 3,
+    "month_tx": "March",
+    "value": 921,
+    "disabilities": 7,
+    "fatalities": 2
+  },
+  {
+    "year": 2009,
+    "month": 4,
+    "month_tx": "April",
+    "value": 891,
+    "disabilities": 11,
+    "fatalities": 4
+  },
+  {
+    "year": 2009,
+    "month": 5,
+    "month_tx": "May",
+    "value": 857,
+    "disabilities": 5,
+    "fatalities": 3
+  },
+  {
+    "year": 2009,
+    "month": 6,
+    "month_tx": "June",
+    "value": 907,
+    "disabilities": 8,
+    "fatalities": 5
+  },
+  {
+    "year": 2009,
+    "month": 7,
+    "month_tx": "July",
+    "value": 874,
+    "disabilities": 11,
+    "fatalities": 2
+  },
+  {
+    "year": 2009,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1002,
+    "disabilities": 8,
+    "fatalities": 1
+  },
+  {
+    "year": 2009,
+    "month": 9,
+    "month_tx": "September",
+    "value": 878,
+    "disabilities": 12,
+    "fatalities": 4
+  },
+  {
+    "year": 2009,
+    "month": 10,
+    "month_tx": "October",
+    "value": 875,
+    "disabilities": 10,
+    "fatalities": 3
+  },
+  {
+    "year": 2009,
+    "month": 11,
+    "month_tx": "November",
+    "value": 756,
+    "disabilities": 5,
+    "fatalities": 2
+  },
+  {
+    "year": 2009,
+    "month": 12,
+    "month_tx": "December",
+    "value": 714,
+    "disabilities": 7,
+    "fatalities": 2
+  },
+  {
+    "year": 2010,
+    "month": 1,
+    "month_tx": "January",
+    "value": 796,
+    "disabilities": 3,
+    "fatalities": 4
+  },
+  {
+    "year": 2010,
+    "month": 2,
+    "month_tx": "February",
+    "value": 772,
+    "disabilities": 5,
+    "fatalities": 0
+  },
+  {
+    "year": 2010,
+    "month": 3,
+    "month_tx": "March",
+    "value": 851,
+    "disabilities": 6,
+    "fatalities": 1
+  },
+  {
+    "year": 2010,
+    "month": 4,
+    "month_tx": "April",
+    "value": 827,
+    "disabilities": 7,
+    "fatalities": 4
+  },
+  {
+    "year": 2010,
+    "month": 5,
+    "month_tx": "May",
+    "value": 798,
+    "disabilities": 4,
+    "fatalities": 6
+  },
+  {
+    "year": 2010,
+    "month": 6,
+    "month_tx": "June",
+    "value": 999,
+    "disabilities": 10,
+    "fatalities": 6
+  },
+  {
+    "year": 2010,
+    "month": 7,
+    "month_tx": "July",
+    "value": 846,
+    "disabilities": 10,
+    "fatalities": 3
+  },
+  {
+    "year": 2010,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1021,
+    "disabilities": 5,
+    "fatalities": 3
+  },
+  {
+    "year": 2010,
+    "month": 9,
+    "month_tx": "September",
+    "value": 952,
+    "disabilities": 12,
+    "fatalities": 1
+  },
+  {
+    "year": 2010,
+    "month": 10,
+    "month_tx": "October",
+    "value": 912,
+    "disabilities": 10,
+    "fatalities": 6
+  },
+  {
+    "year": 2010,
+    "month": 11,
+    "month_tx": "November",
+    "value": 732,
+    "disabilities": 9,
+    "fatalities": 3
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "month_tx": "December",
+    "value": 727,
+    "disabilities": 8,
+    "fatalities": 5
+  },
+  {
+    "year": 2011,
+    "month": 1,
+    "month_tx": "January",
+    "value": 893,
+    "disabilities": 13,
+    "fatalities": 1
+  },
+  {
+    "year": 2011,
+    "month": 2,
+    "month_tx": "February",
+    "value": 785,
+    "disabilities": 9,
+    "fatalities": 3
+  },
+  {
+    "year": 2011,
+    "month": 3,
+    "month_tx": "March",
+    "value": 899,
+    "disabilities": 13,
+    "fatalities": 2
+  },
+  {
+    "year": 2011,
+    "month": 4,
+    "month_tx": "April",
+    "value": 828,
+    "disabilities": 11,
+    "fatalities": 2
+  },
+  {
+    "year": 2011,
+    "month": 5,
+    "month_tx": "May",
+    "value": 861,
+    "disabilities": 10,
+    "fatalities": 1
+  },
+  {
+    "year": 2011,
+    "month": 6,
+    "month_tx": "June",
+    "value": 937,
+    "disabilities": 11,
+    "fatalities": 4
+  },
+  {
+    "year": 2011,
+    "month": 7,
+    "month_tx": "July",
+    "value": 911,
+    "disabilities": 6,
+    "fatalities": 2
+  },
+  {
+    "year": 2011,
+    "month": 8,
+    "month_tx": "August",
+    "value": 1096,
+    "disabilities": 3,
+    "fatalities": 3
+  },
+  {
+    "year": 2011,
+    "month": 9,
+    "month_tx": "September",
+    "value": 923,
+    "disabilities": 9,
+    "fatalities": 4
+  },
+  {
+    "year": 2011,
+    "month": 10,
+    "month_tx": "October",
+    "value": 920,
+    "disabilities": 10,
+    "fatalities": 5
+  },
+  {
+    "year": 2011,
+    "month": 11,
+    "month_tx": "November",
+    "value": 795,
+    "disabilities": 11,
+    "fatalities": 4
+  },
+  {
+    "year": 2011,
+    "month": 12,
+    "month_tx": "December",
+    "value": 700,
+    "disabilities": 8,
+    "fatalities": 4
+  },
+  {
+    "year": 2012,
+    "month": 1,
+    "month_tx": "January",
+    "value": 851,
+    "disabilities": 9,
+    "fatalities": 2
+  },
+  {
+    "year": 2012,
+    "month": 2,
+    "month_tx": "February",
+    "value": 819,
+    "disabilities": 10,
+    "fatalities": 3
+  },
+  {
+    "year": 2012,
+    "month": 3,
+    "month_tx": "March",
+    "value": 914,
+    "disabilities": 12,
+    "fatalities": 5
+  },
+  {
+    "year": 2012,
+    "month": 4,
+    "month_tx": "April",
+    "value": 765,
+    "disabilities": 7,
+    "fatalities": 2
+  },
+  {
+    "year": 2012,
+    "month": 5,
+    "month_tx": "May",
+    "value": 849,
+    "disabilities": 5,
+    "fatalities": 5
+  },
+  {
+    "year": 2012,
+    "month": 6,
+    "month_tx": "June",
+    "value": 804,
+    "disabilities": 7,
+    "fatalities": 2
+  },
+  {
+    "year": 2012,
+    "month": 7,
+    "month_tx": "July",
+    "value": 855,
+    "disabilities": 5,
+    "fatalities": 4
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "month_tx": "August",
+    "value": 913,
+    "disabilities": 6,
+    "fatalities": 2
+  },
+  {
+    "year": 2012,
+    "month": 9,
+    "month_tx": "September",
+    "value": 788,
+    "disabilities": 4,
+    "fatalities": 5
+  },
+  {
+    "year": 2012,
+    "month": 10,
+    "month_tx": "October",
+    "value": 800,
+    "disabilities": 3,
+    "fatalities": 1
+  },
+  {
+    "year": 2012,
+    "month": 11,
+    "month_tx": "November",
+    "value": 596,
+    "disabilities": 5,
+    "fatalities": 4
+  },
+  {
+    "year": 2012,
+    "month": 12,
+    "month_tx": "December",
+    "value": 595,
+    "disabilities": 5,
+    "fatalities": 1
+  },
+  {
+    "year": 2013,
+    "month": 1,
+    "month_tx": "January",
+    "value": 752,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 2,
+    "month_tx": "February",
+    "value": 651,
+    "disabilities": 8,
+    "fatalities": 5
+  },
+  {
+    "year": 2013,
+    "month": 3,
+    "month_tx": "March",
+    "value": 700,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 4,
+    "month_tx": "April",
+    "value": 747,
+    "disabilities": 4,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 5,
+    "month_tx": "May",
+    "value": 774,
+    "disabilities": 10,
+    "fatalities": 1
+  },
+  {
+    "year": 2013,
+    "month": 6,
+    "month_tx": "June",
+    "value": 766,
+    "disabilities": 7,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 7,
+    "month_tx": "July",
+    "value": 796,
+    "disabilities": 6,
+    "fatalities": 4
+  },
+  {
+    "year": 2013,
+    "month": 8,
+    "month_tx": "August",
+    "value": 826,
+    "disabilities": 9,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 9,
+    "month_tx": "September",
+    "value": 806,
+    "disabilities": 5,
+    "fatalities": 3
+  },
+  {
+    "year": 2013,
+    "month": 10,
+    "month_tx": "October",
+    "value": 787,
+    "disabilities": 9,
+    "fatalities": 5
+  },
+  {
+    "year": 2013,
+    "month": 11,
+    "month_tx": "November",
+    "value": 613,
+    "disabilities": 9,
+    "fatalities": 5
+  },
+  {
+    "year": 2013,
+    "month": 12,
+    "month_tx": "December",
+    "value": 606,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2014,
+    "month": 1,
+    "month_tx": "January",
+    "value": 723,
+    "disabilities": 8,
+    "fatalities": 1
+  },
+  {
+    "year": 2014,
+    "month": 2,
+    "month_tx": "February",
+    "value": 702,
+    "disabilities": 7,
+    "fatalities": 5
+  },
+  {
+    "year": 2014,
+    "month": 3,
+    "month_tx": "March",
+    "value": 766,
+    "disabilities": 8,
+    "fatalities": 2
+  },
+  {
+    "year": 2014,
+    "month": 4,
+    "month_tx": "April",
+    "value": 684,
+    "disabilities": 3,
+    "fatalities": 5
+  },
+  {
+    "year": 2014,
+    "month": 5,
+    "month_tx": "May",
+    "value": 721,
+    "disabilities": 8,
+    "fatalities": 5
+  },
+  {
+    "year": 2014,
+    "month": 6,
+    "month_tx": "June",
+    "value": 768,
+    "disabilities": 9,
+    "fatalities": 6
+  },
+  {
+    "year": 2014,
+    "month": 7,
+    "month_tx": "July",
+    "value": 791,
+    "disabilities": 12,
+    "fatalities": 2
+  },
+  {
+    "year": 2014,
+    "month": 8,
+    "month_tx": "August",
+    "value": 754,
+    "disabilities": 7,
+    "fatalities": 3
+  },
+  {
+    "year": 2014,
+    "month": 9,
+    "month_tx": "September",
+    "value": 727,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2014,
+    "month": 10,
+    "month_tx": "October",
+    "value": 726,
+    "disabilities": 9,
+    "fatalities": 3
+  },
+  {
+    "year": 2014,
+    "month": 11,
+    "month_tx": "November",
+    "value": 646,
+    "disabilities": 4,
+    "fatalities": 6
+  },
+  {
+    "year": 2014,
+    "month": 12,
+    "month_tx": "December",
+    "value": 653,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2015,
+    "month": 1,
+    "month_tx": "January",
+    "value": 687,
+    "disabilities": 9,
+    "fatalities": 5
+  },
+  {
+    "year": 2015,
+    "month": 2,
+    "month_tx": "February",
+    "value": 623,
+    "disabilities": 9,
+    "fatalities": 1
+  },
+  {
+    "year": 2015,
+    "month": 3,
+    "month_tx": "March",
+    "value": 667,
+    "disabilities": 10,
+    "fatalities": 5
+  },
+  {
+    "year": 2015,
+    "month": 4,
+    "month_tx": "April",
+    "value": 607,
+    "disabilities": 9,
+    "fatalities": 0
+  },
+  {
+    "year": 2015,
+    "month": 5,
+    "month_tx": "May",
+    "value": 604,
+    "disabilities": 4,
+    "fatalities": 4
+  },
+  {
+    "year": 2015,
+    "month": 6,
+    "month_tx": "June",
+    "value": 723,
+    "disabilities": 7,
+    "fatalities": 3
+  },
+  {
+    "year": 2015,
+    "month": 7,
+    "month_tx": "July",
+    "value": 701,
+    "disabilities": 9,
+    "fatalities": 2
+  },
+  {
+    "year": 2015,
+    "month": 8,
+    "month_tx": "August",
+    "value": 751,
+    "disabilities": 5,
+    "fatalities": 4
+  },
+  {
+    "year": 2015,
+    "month": 9,
+    "month_tx": "September",
+    "value": 668,
+    "disabilities": 8,
+    "fatalities": 2
+  },
+  {
+    "year": 2015,
+    "month": 10,
+    "month_tx": "October",
+    "value": 610,
+    "disabilities": 7,
+    "fatalities": 0
+  },
+  {
+    "year": 2015,
+    "month": 11,
+    "month_tx": "November",
+    "value": 476,
+    "disabilities": 5,
+    "fatalities": 0
+  },
+  {
+    "year": 2015,
+    "month": 12,
+    "month_tx": "December",
+    "value": 461,
+    "disabilities": 4,
+    "fatalities": 3
+  },
+  {
+    "year": 2016,
+    "month": 1,
+    "month_tx": "January",
+    "value": 561,
+    "disabilities": 3,
+    "fatalities": 3
+  },
+  {
+    "year": 2016,
+    "month": 2,
+    "month_tx": "February",
+    "value": 501,
+    "disabilities": 4,
+    "fatalities": 1
+  },
+  {
+    "year": 2016,
+    "month": 3,
+    "month_tx": "March",
+    "value": 579,
+    "disabilities": 8,
+    "fatalities": 3
+  },
+  {
+    "year": 2016,
+    "month": 4,
+    "month_tx": "April",
+    "value": 498,
+    "disabilities": 3,
+    "fatalities": 2
+  },
+  {
+    "year": 2016,
+    "month": 5,
+    "month_tx": "May",
+    "value": 526,
+    "disabilities": 3,
+    "fatalities": 2
+  },
+  {
+    "year": 2016,
+    "month": 6,
+    "month_tx": "June",
+    "value": 552,
+    "disabilities": 9,
+    "fatalities": 3
+  },
+  {
+    "year": 2016,
+    "month": 7,
+    "month_tx": "July",
+    "value": 513,
+    "disabilities": 6,
+    "fatalities": 2
+  },
+  {
+    "year": 2016,
+    "month": 8,
+    "month_tx": "August",
+    "value": 675,
+    "disabilities": 7,
+    "fatalities": 1
+  },
+  {
+    "year": 2016,
+    "month": 9,
+    "month_tx": "September",
+    "value": 569,
+    "disabilities": 2,
+    "fatalities": 3
+  },
+  {
+    "year": 2016,
+    "month": 10,
+    "month_tx": "October",
+    "value": 580,
+    "disabilities": 2,
+    "fatalities": 1
+  },
+  {
+    "year": 2016,
+    "month": 11,
+    "month_tx": "November",
+    "value": 460,
+    "disabilities": 6,
+    "fatalities": 0
+  },
+  {
+    "year": 2016,
+    "month": 12,
+    "month_tx": "December",
+    "value": 473,
+    "disabilities": 2,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 1,
+    "month_tx": "January",
+    "value": 532,
+    "disabilities": 5,
+    "fatalities": 2
+  },
+  {
+    "year": 2017,
+    "month": 2,
+    "month_tx": "February",
+    "value": 535,
+    "disabilities": 3,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "month_tx": "March",
+    "value": 571,
+    "disabilities": 3,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 4,
+    "month_tx": "April",
+    "value": 494,
+    "disabilities": 6,
+    "fatalities": 0
+  },
+  {
+    "year": 2017,
+    "month": 5,
+    "month_tx": "May",
+    "value": 581,
+    "disabilities": 1,
+    "fatalities": 2
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "month_tx": "June",
+    "value": 562,
+    "disabilities": 3,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 7,
+    "month_tx": "July",
+    "value": 594,
+    "disabilities": 6,
+    "fatalities": 4
+  },
+  {
+    "year": 2017,
+    "month": 8,
+    "month_tx": "August",
+    "value": 639,
+    "disabilities": 11,
+    "fatalities": 2
+  },
+  {
+    "year": 2017,
+    "month": 9,
+    "month_tx": "September",
+    "value": 508,
+    "disabilities": 7,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "month_tx": "October",
+    "value": 592,
+    "disabilities": 6,
+    "fatalities": 3
+  },
+  {
+    "year": 2017,
+    "month": 11,
+    "month_tx": "November",
+    "value": 478,
+    "disabilities": 2,
+    "fatalities": 0
+  },
+  {
+    "year": 2017,
+    "month": 12,
+    "month_tx": "December",
+    "value": 428,
+    "disabilities": 6,
+    "fatalities": 2
+  }
+]
