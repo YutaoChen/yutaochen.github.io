@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>D3 Map Example</title>
+
+    <style type="text/css">
+
+
+    circle:hover {
+    	fill-opacity: .7;
+      stroke: black;
+    }
+
+.tooltip{
+  position: absolute;
+  border:1px solid #cccccc;
+  background-color:rgba(255,255,255,0.9);
+  opacity:0;
+  max-width: 290px;
+  min-width: 130px;
+  transform:translate(-50%, -100%);
+  pointer-events: none;
+  padding: 10px 10px;
+  font-size: 10pt;
+  font-family: Roboto;
+  fill: #000;
+}
+</style>
+</head>
+<body>
+
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+<script>
+
+
+
+var svg = d3.select("body")
+    .append("svg")
+    .attr("width", 1056)
+    .attr("height", 760);
+
+
+
+
+
+// Append Div for tooltip to SVG
+var div = d3.select("body")
+.append("div")
+.attr("class", "tooltip")
+.style("opacity", 0);
+
+    Promise.all([
+      d3.json("us-states_20m.topojson"),
+      d3.csv("accidents.csv")
+])
+.then(function(data){
+
+    var data_map = d3.map();
+
+    var currentYear = 2000;
+
+        //console.log(data[0].projection)
+
+        data[1].forEach(function(d){
+          d["LATITUDE"] = +d["LATITUDE"];
+          d["LONGITUDE"] = +d["LONGITUDE"];
+          d["accident_rate"] = +d["accident_rate"];
+          d["CAL_YR"] = +d["CAL_YR"]
+          //d["Cancer Rate"] = +d["Cancer Rate"];
+          //data_map.set(d["State"], d["Cancer Rate"]);
+        });
+
+        data[1] = data[1].filter(function(d){ return d["accident_rate"] > 1.0; })
+
+        var colorScale = d3.scaleLinear()
+
+
+
+
+
+          var projection = d3.geoAlbersUsa()
+          .fitSize([980, 720], topojson.feature(data[0], data[0].objects.states));
+
+           //this is a function, where if you give it projectLatLong([longitude, latitutde])
+           var projectLatLong = d3.geoAlbersUsa()
+                .fitSize([980, 720], topojson.feature(data[0], data[0].objects.states));
+
+
+    var path = d3.geoPath()
+        .projection(projection);
+
+        //console.log(d3.extent(data[1], function(d){ return d["accident_rate"]}))
+
+      var accidentScale = d3.scaleLog()
+        .domain(d3.extent(data[1], function(d){ return d["accident_rate"]}))
+        .range([1, 25]);
+
+      data[1].sort(function(a,b){ b.accident_rate - a.accident_rate});
+
+
+            svg.selectAll("path")
+                .data(topojson.feature(data[0], data[0].objects.states).features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("stroke", "#fff")
+                .attr("fill", "#ddd");
+
+
+                svg.append("text")
+              .attr("x", (500))
+              .attr("y", (25))
+              .attr("text-anchor", "middle")
+              .style("font-size", "20px")
+              .style("font-family", "'Roboto', sans-serif")
+              .text("Accident Rates among Mines with over 500 Hours since 2000");
+
+              svg.append("text")
+            .attr("x", (752))
+            .attr("y", (55))
+            .attr("text-anchor", "middle")
+            .style("font-size", "10px")
+            .style("font-family", "'Roboto', sans-serif")
+            .html("*Only mines with an accident rate higher than 1.0 are included.");
+
+            svg.append("text")
+          .attr("x", (770))
+          .attr("y", (67))
+          .attr("text-anchor", "middle")
+          .style("font-size", "10px")
+          .style("font-family", "'Roboto', sans-serif")
+          .html("accident rate = total number of accidents / summation of hours * 10,000");
+
+            svg.append("text")
+          .attr("x", 780)
+          .attr("y", 660)
+          .attr("text-anchor", "middle")
+          .style("font-family", "'Roboto', sans-serif")
+          .style("font-size", "11px")
+          .html("Source: Mine Safety and Health Administration");
+
+
+          //DATE PICKER
+          var datepicker = svg.append("g")
+                            .attr("transform","translate(480,680)");
+
+          datepicker.append("rect")
+            .attr("x", (0))
+            .attr("y", (0))
+            .attr("rx", (10))
+            .attr("ry", (10))
+            .attr("width", (60))
+            .attr("height", (30))
+            .style("fill", "gray");
+
+          datepicker.append("text")
+              .attr("id", "yearText")
+              .attr("x", 8)
+              .attr("y", 7)
+              .attr("text-anchor", "start")
+              .attr("alignment-baseline", "hanging")
+              .style("font-size", "20px")
+              .style("padding", "100px")
+              .style("fill", "white")
+              .style("font-family", "'Roboto', sans-serif")
+              .html(currentYear);
+
+          //left arrow
+          datepicker.append("polygon")
+             .attr("points", "-20,15 -3,0 -3,30")
+             .attr("id", "leftArrow")
+             .attr("fill", "gray")
+             .style("cursor", "pointer")
+             .style("display", "none")
+             .on("click", function(){
+
+               //make right reappear if it's invisible
+
+               d3.select("#rightArrow")
+                 .style("display", "block");
+
+               if(currentYear > 2000){
+                 currentYear -= 1;
+               }
+
+               if(currentYear == 2008) {
+                 d3.select("#leftArrow")
+                   .style("display", "none");
+               }
+
+               d3.select("#yearText")
+                 .html(currentYear);
+
+               updateBubbleMap(currentYear);
+             });
+
+        //right arrow
+         datepicker.append("polygon")
+            .attr("id", "rightArrow")
+            .attr("points", "63,0 80,15 63,30")
+            .attr("fill", "gray")
+            .style("cursor","pointer")
+            .on("click", function(){
+
+                d3.select("#leftArrow")
+                  .style("display", "block");
+
+                if(currentYear < 2017){
+                  currentYear += 1;
+                }
+
+                if(currentYear == 2017) {
+                  d3.select("#rightArrow")
+                    .style("display", "none");
+                }
+
+                d3.select("#yearText")
+                  .html(currentYear);
+
+                updateBubbleMap(currentYear);
+
+            });
+
+            var updateBubbleMap = function(newYear){
+
+              //delete ALL bubbles
+              d3.selectAll(".bubbles").remove();
+
+              console.log(data[1].filter(function(d){ return d["CAL_YR"] == newYear; }));
+
+              var bubbles = svg.selectAll(".bubbles")
+                .data(data[1].filter(function(d){ return d["CAL_YR"] == newYear; }).filter(function(d){ return d["LATITUDE"] != 0;}))
+                .enter()
+                .append("circle")
+                .attr("class", "bubbles")
+                .attr("cx", function (d) {
+                  if(projectLatLong([d["LONGITUDE"], d["LATITUDE"]]) != null){
+                    return projectLatLong([d["LONGITUDE"], d["LATITUDE"]])[0];
+                  }
+                })
+                .attr("cy", function (d) {
+                  if(projectLatLong([d["LONGITUDE"], d["LATITUDE"]]) != null){
+                    return projectLatLong([d["LONGITUDE"], d["LATITUDE"]])[1];
+                  }
+                })
+                .attr("r", function(d){ return accidentScale(d["accident_rate"]); })
+                .attr("fill", "#de2d26")
+                .attr("opacity", 0.5)
+                .attr("stroke", "white")
+                .attr("stroke-width", 0.5)
+                .on("mouseover", function(d) {
+                      d3.select(".tooltip")
+                        .style("opacity", 1)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY) + "px")
+                        .style("font-size", "12px")
+                        .style("font-family", "'Roboto', sans-serif")
+                        .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
+                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
+                        d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
+                        d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
+	              })
+                .on("mouseout", function(d) {
+                      d3.select(".tooltip")
+                        .style("opacity",0);
+                })
+            }
+
+
+
+
+
+
+
+
+
+                // add circles to svg
+              svg.selectAll(".bubbles")
+                .data(data[1].filter(function(d){ return d["CAL_YR"] == currentYear; }).filter(function(d){ return d["LATITUDE"] != 0;}))
+                .enter()
+                .append("circle")
+                .attr("class", "bubbles")
+                .attr("cx", function (d) {
+
+                  //console.log(projectLatLong([d["LONGITUDE"], d["LATITUDE"]])[0]);
+                  //console.log(d["LONGITUDE"], d["LATITUDE"]);
+
+                  if(projectLatLong([d["LONGITUDE"], d["LATITUDE"]]) != null){
+                    return projectLatLong([d["LONGITUDE"], d["LATITUDE"]])[0];
+                  }
+
+
+                })
+                .attr("cy", function (d) {
+                  //console.log(projectLatLong([d["LONGITUDE"], d["LATITUDE"]]))
+
+                  if(projectLatLong([d["LONGITUDE"], d["LATITUDE"]]) != null){
+                    return projectLatLong([d["LONGITUDE"], d["LATITUDE"]])[1];
+                  }
+                })
+
+                .attr("r", function(d){ return accidentScale(d["accident_rate"]); })
+                .attr("fill", "#de2d26")
+                .attr("opacity", 0.5)
+                .attr("stroke", "white")
+                .attr("stroke-width", 0.5)
+                .on("mouseover", function(d) {
+                      d3.select(".tooltip")
+                        .style("opacity", 1)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY) + "px")
+                        .style("font-size", "12px")
+                        .style("font-family", "'Roboto', sans-serif")
+                        .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
+                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
+                        d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
+                        d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
+	              })
+                .on("mouseout", function(d) {
+                      d3.select(".tooltip")
+                        .style("opacity",0);
+                })
+
+        });
+
+
+
+        </script>
+        </body>
+        </html>
