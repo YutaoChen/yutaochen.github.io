@@ -7,6 +7,19 @@
     <style type="text/css">
 
 
+    .legend circle {
+      fill: none;
+      stroke: #ccc;
+    }
+
+    .legend text {
+      fill: #777;
+      font: 8px sans-serif;
+      padding-bottom: 20px;
+      text-anchor: middle;
+    }
+
+
     circle:hover {
     	fill-opacity: .7;
       stroke: black;
@@ -73,7 +86,7 @@ var div = d3.select("body")
           //data_map.set(d["State"], d["Cancer Rate"]);
         });
 
-        data[1] = data[1].filter(function(d){ return d["accident_rate"] > 1.0; })
+        data[1] = data[1].filter(function(d){ return d["accident_rate"] >= 0.5; })
 
         var colorScale = d3.scaleLinear()
 
@@ -99,6 +112,8 @@ var div = d3.select("body")
         .range([1, 25]);
 
       data[1].sort(function(a,b){ b.accident_rate - a.accident_rate});
+
+
 
 
             svg.selectAll("path")
@@ -168,13 +183,50 @@ var div = d3.select("body")
               .style("font-family", "'Roboto', sans-serif")
               .html(currentYear);
 
+
+
+
           //left arrow
-          datepicker.append("polygon")
-             .attr("points", "-20,15 -3,0 -3,30")
+          var leftarrow = datepicker.append("g")
+             .attr("transform","translate(-30,3)");
+
+          leftarrow.append("rect")
+              .attr("x", 3)
+              .attr("y", 0)
+              .attr("width", 20)
+              .attr("height", 20)
+              .attr("fill", "white")
+              .style("cursor", "pointer")
+              .on("click", function(){
+
+                //make right reappear if it's invisible
+
+                d3.select("#rightArrow")
+                  .style("display", "block");
+
+                if(currentYear > 2000){
+                  currentYear -= 1;
+                }
+
+                if(currentYear == 2000) {
+                  d3.select("#leftArrow")
+                    .style("display", "none");
+                }
+
+                d3.select("#yearText")
+                  .html(currentYear);
+
+                updateBubbleMap(currentYear);
+              });
+
+          leftarrow.append("path")
+             .attr("d", "M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z")
              .attr("id", "leftArrow")
              .attr("fill", "gray")
-             .style("cursor", "pointer")
+             .attr("fill-rule", "evenodd")
+             .attr("clip-rule", "evenodd")
              .style("display", "none")
+             .style("cursor", "pointer")
              .on("click", function(){
 
                //make right reappear if it's invisible
@@ -186,7 +238,7 @@ var div = d3.select("body")
                  currentYear -= 1;
                }
 
-               if(currentYear == 2008) {
+               if(currentYear == 2000) {
                  d3.select("#leftArrow")
                    .style("display", "none");
                }
@@ -197,31 +249,61 @@ var div = d3.select("body")
                updateBubbleMap(currentYear);
              });
 
+
+
         //right arrow
-         datepicker.append("polygon")
-            .attr("id", "rightArrow")
-            .attr("points", "63,0 80,15 63,30")
-            .attr("fill", "gray")
-            .style("cursor","pointer")
+
+        var rightarrow = datepicker.append("g")
+           .attr("transform","translate(65,3)");
+
+        rightarrow.append("rect")
+            .attr("x", 3)
+            .attr("y", 0)
+            .attr("width", 20)
+            .attr("height", 20)
+            .attr("fill", "white")
+            .style("cursor", "pointer")
             .on("click", function(){
 
-                d3.select("#leftArrow")
-                  .style("display", "block");
+              d3.select("#leftArrow")
+                .style("display", "block");
 
                 if(currentYear < 2017){
-                  currentYear += 1;
-                }
+                    currentYear += 1;
+                      }
 
                 if(currentYear == 2017) {
                   d3.select("#rightArrow")
-                    .style("display", "none");
-                }
+                  .style("display", "none");
+                      }
 
                 d3.select("#yearText")
                   .html(currentYear);
 
                 updateBubbleMap(currentYear);
 
+                  });
+
+         rightarrow.append("path")
+            .attr("id", "rightArrow")
+            .attr("d", "M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z")
+            .attr("fill", "gray")
+            .attr("fill-rule", "evenodd")
+            .attr("clip-rule", "evenodd")
+            .style("cursor","pointer")
+            .on("click", function(){
+                d3.select("#leftArrow")
+                  .style("display", "block");
+                if(currentYear < 2017){
+                  currentYear += 1;
+                }
+                if(currentYear == 2017) {
+                  d3.select("#rightArrow")
+                    .style("display", "none");
+                }
+                d3.select("#yearText")
+                  .html(currentYear);
+                updateBubbleMap(currentYear);
             });
 
             var updateBubbleMap = function(newYear){
@@ -255,7 +337,7 @@ var div = d3.select("body")
                       d3.select(".tooltip")
                         .style("opacity", 1)
                         .style("left", (d3.event.pageX) + "px")
-                        .style("top", (d3.event.pageY) + "px")
+                        .style("top", (d3.event.pageY-5) + "px")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
@@ -273,8 +355,21 @@ var div = d3.select("body")
 
 
 
+            var legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform","translate(800,150)")
+              .selectAll("g")
+                .data([5, 40, 300])
+              .enter().append("g");
 
+            legend.append("circle")
+                .attr("cy", function(d) { return - accidentScale(d); })
+                .attr("r", accidentScale);
 
+            legend.append("text")
+                .attr("y", function(d) { return - 2 * accidentScale(d); })
+                .attr("dy", "1.2em")
+                .text(d3.format(".1s"));
 
 
 
@@ -312,7 +407,7 @@ var div = d3.select("body")
                       d3.select(".tooltip")
                         .style("opacity", 1)
                         .style("left", (d3.event.pageX) + "px")
-                        .style("top", (d3.event.pageY) + "px")
+                        .style("top", (d3.event.pageY-5) + "px")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
