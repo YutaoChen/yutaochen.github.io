@@ -19,7 +19,6 @@
       text-anchor: middle;
     }
 
-
     circle:hover {
     	fill-opacity: .7;
       stroke: black;
@@ -34,8 +33,8 @@
   min-width: 180px;
   transform:translate(-50%, -100%);
   pointer-events: none;
-  padding: 10px 10px;
-  font-size: 10pt;
+  padding: 6px 6px;
+  font-size: 9pt;
   font-family: Roboto;
   fill: #000;
 }
@@ -342,7 +341,7 @@ var div = d3.select("body")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
-                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        "</strong>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
                         d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
                         d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
                         d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
@@ -412,7 +411,7 @@ var div = d3.select("body")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
-                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        "</strong>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
                         d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
                         d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
                         d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
