@@ -27,8 +27,8 @@
         border:1px solid #cccccc;
         background-color:rgba(255,255,255,0.9);
         opacity:0;
-        max-width: 300px;
-        min-width: 150px;
+        max-width: 280px;
+        min-width: 100px;
         transform:translate(-50%, -100%);
         pointer-events: none;
         padding: 10px 10px;
@@ -153,7 +153,7 @@
 
                  d3.select(".tooltip")
                   .style("opacity", 1)
-                  .style("left", (d3.event.pageX + 50) + "px")
+                  .style("left", (d3.event.pageX + 69) + "px")
                   .style("top", (d3.event.pageY) + "px")
                   .html("<strong style='font-size:11pt;'>" + "<strong style='color:firebrick;'>" + d.value + "</strong>" + fatatlity_word + " in " + "<strong style='color:firebrick;'>" + d.value_1 + "</strong>" + accident_word + "</strong>" + notes)
 
