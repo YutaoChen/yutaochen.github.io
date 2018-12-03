@@ -43,9 +43,9 @@
     <div id="chart"></div>
 
     <script type="text/javascript">
-      let margin = { top: 120, right: 0, bottom: 100, left: 80 },
-          width = 980 - margin.left - margin.right,
-          height = 500 - margin.top - margin.bottom,
+      let margin = { top: 150, right: 0, bottom: 100, left: 80 },
+          width = 1020 - margin.left - margin.right,
+          height = 520 - margin.top - margin.bottom,
           gridSize = Math.floor(width / 24),
           legendElementWidth = gridSize*2,
           buckets = 9,
@@ -193,7 +193,7 @@
 
           legend_g.append("rect")
             .attr("x", (d, i) => legendElementWidth * i)
-            .attr("y", height + gridSize * 1.1)
+            .attr("y", height + gridSize * 1.2)
             .attr("width", legendElementWidth)
             .attr("height", gridSize / 2)
             .style("fill", (d, i) => colors[i]);
@@ -202,7 +202,7 @@
             .attr("class", "mono")
             .text((d) => "≥ " + Math.round(d))
             .attr("x", (d, i) => legendElementWidth * i)
-            .attr("y", height + gridSize * 1.9);
+            .attr("y", height + gridSize * 2);
 
           legend_g.append("text")
           .attr("x", legendElementWidth - margin.left/4)
