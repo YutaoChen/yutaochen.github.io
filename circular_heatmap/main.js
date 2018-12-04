@@ -1,6 +1,6 @@
 function loadCircularHeatMap (dataset, dom_element_to_append_to,radial_labels,segment_labels) {
 
-    var margin = {top: 50, right: 100, bottom: 50, left: 20};
+    var margin = {top: 50, right: 100, bottom: 50, left: 75};
     var width = 800 - margin.left - margin.right;
 
     var height = width + 100;
@@ -41,7 +41,7 @@ function loadCircularHeatMap (dataset, dom_element_to_append_to,radial_labels,se
 
                       svg.append("text")
                       .attr("x", width - 100)
-                      .attr("y", height - margin.left)
+                      .attr("y", height - margin.left/3)
                       .attr("text-anchor", "middle")
                       .style("font-family", "'Roboto', sans-serif")
                       .style("font-size", "12px")
@@ -68,10 +68,10 @@ function loadCircularHeatMap (dataset, dom_element_to_append_to,radial_labels,se
 
     svg.selectAll("path")
     .on('mouseover', function(d) {
-        tooltip.select('.month').html("<strong style='color:#0570b0; font-size:17px;'>" + d.month_tx + "</stong>" + " " + d.year);
-        tooltip.select('.value').html("<strong style='color:firebrick; font-size:13px;'>" + d.value + "</stong>" + " <strong style='color:black;'>accidents</strong>");
-        tooltip.select('.fatalities').html("<strong style='color:firebrick; font-size:13px;'>" + d.fatalities + "</stong>" + " fatal <strong style='color:black;'>ones</strong>");
-        tooltip.select('.disabilities').html("<strong style='color:firebrick; font-size:13px;'>" + d.disabilities + "</stong>" + " <strong style='color:black;'>led to </strong>permanent disability");
+        tooltip.select('.month').html("<strong style='color:#0570b0; font-size:15px;'>" + d.month_tx + "</stong>" + " " + d.year);
+        tooltip.select('.value').html("<strong style='color:firebrick; font-size:10px;'>" + d.value + "</stong>" + " <strong style='color:black;'>accidents</strong>");
+        tooltip.select('.fatalities').html("<strong style='color:firebrick; font-size:10px;'>" + d.fatalities + "</stong>" + " fatal <strong style='color:black;'>ones</strong>");
+        tooltip.select('.disabilities').html("<strong style='color:firebrick; font-size:10px;'>" + d.disabilities + "</stong>" + " <strong style='color:black;'>led to </strong>permanent disability");
 
 
         tooltip.style('display', 'block');
@@ -80,7 +80,7 @@ function loadCircularHeatMap (dataset, dom_element_to_append_to,radial_labels,se
     .on('mousemove', function(d) {
 
         tooltip.style('top', (height/2 - 5) + 'px')
-               .style('left', (width/2 + 42) + 'px');
+               .style('left', (width/2 + 61) + 'px');
     })
     .on('mouseout', function(d) {
         tooltip.style('display', 'none');
