@@ -19,6 +19,7 @@
       text-anchor: middle;
     }
 
+
     circle:hover {
     	fill-opacity: .7;
       stroke: black;
@@ -29,12 +30,12 @@
   border:1px solid #cccccc;
   background-color:rgba(255,255,255,0.9);
   opacity:0;
-  max-width: 320px;
-  min-width: 180px;
+  max-width: 290px;
+  min-width: 130px;
   transform:translate(-50%, -100%);
   pointer-events: none;
-  padding: 6px 6px;
-  font-size: 9pt;
+  padding: 10px 10px;
+  font-size: 10pt;
   font-family: Roboto;
   fill: #000;
 }
@@ -44,7 +45,7 @@
 
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://unpkg.com/topojson@3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script>
 
 
@@ -53,7 +54,6 @@ var svg = d3.select("body")
     .append("svg")
     .attr("width", 1056)
     .attr("height", 760);
-
 
 
 
@@ -126,7 +126,7 @@ var div = d3.select("body")
 
 
                 svg.append("text")
-              .attr("x", (520))
+              .attr("x", (500))
               .attr("y", (25))
               .attr("text-anchor", "middle")
               .style("font-size", "20px")
@@ -163,12 +163,12 @@ var div = d3.select("body")
                             .attr("transform","translate(480,680)");
 
           datepicker.append("rect")
-            .attr("x", (0))
-            .attr("y", (0))
-            .attr("rx", (10))
-            .attr("ry", (10))
-            .attr("width", (60))
-            .attr("height", (30))
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("rx", 10)
+            .attr("ry", 10)
+            .attr("width", 60)
+            .attr("height", 30)
             .style("fill", "gray");
 
           datepicker.append("text")
@@ -336,12 +336,12 @@ var div = d3.select("body")
                 .on("mouseover", function(d) {
                       d3.select(".tooltip")
                         .style("opacity", 1)
-                        .style("left", (d3.event.pageX + 45) + "px")
-                        .style("top", (d3.event.pageY - 5) + "px")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY-5) + "px")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
-                        "</strong>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
                         d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
                         d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
                         d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
@@ -406,12 +406,12 @@ var div = d3.select("body")
                 .on("mouseover", function(d) {
                       d3.select(".tooltip")
                         .style("opacity", 1)
-                        .style("left", (d3.event.pageX + 45) + "px")
-                        .style("top", (d3.event.pageY - 5) + "px")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY-5) + "px")
                         .style("font-size", "12px")
                         .style("font-family", "'Roboto', sans-serif")
                         .html("<strong style='color:firebrick; font-size:11pt;'>" + d["CURRENT_MINE_NAME"] +
-                        "</strong>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
+                        "</strong>" + "<br>" + "<br>" + "Accident rate: " + "<strong style='color:firebrick;'>" +
                         d["accident_rate"] + "</strong>" + "<br>" + "Owned by " + "<strong style='color:steelblue;'>" +
                         d["CONTROLLER_NAME"] + "</strong>" + "<br>" + "Located near " + "<strong style='color:steelblue;'>" +
                         d["NEAREST_TOWN"] + ", " + d["STATE"]) + "</strong>";
@@ -420,6 +420,25 @@ var div = d3.select("body")
                       d3.select(".tooltip")
                         .style("opacity",0);
                 })
+
+
+
+
+                //FILTER
+                var filter = svg.append("g")
+                                  .attr("transform","translate(780,680)");
+
+                filter.append("label")
+                .text(function(d) {return d;})
+                .insert("input")
+                .attr({
+                    type: "radio",
+                    class: "shape",
+                    name: "mode",
+                    value: function(d, i) {return i;}
+                });
+
+
 
         });
 
