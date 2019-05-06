@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+h1{
+  font-size:30px;
+  font-family: 'Roboto', sans-serif;
+  text-align:center
+}
+
+p{
+  font-size:18px;
+  font-family: 'Roboto', sans-serif;
+  padding-top:20px;
+  padding-left: 200px;
+}
+  </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    <body>
+      <h1>California's Recyclable Plastic Exports by Region</h1>
+      <div id="band-graphic" style="height:45vw;">
+          <!-- <img style="padding-left: 20vh; padding-right: 20vh; padding-top:20vh; padding-bottom:20vh" src=".graphics.svg"> -->
+      </div>
+      <div class="graphic-caption">
+      <p>Source:CalRecycle</p>
+
+    <script type="text/javascript">
+
+d3.svg("graphics.svg").then(function(data){
+
+
+  var chart = d3.select(data);
+
+  d3.select("#band-graphic").node().insertBefore(chart.select("svg").node(), null);
+
+  var placedChart = d3.select("#band-graphic svg");
+
+  placedChart
+    .style("margin-left", "20vh")
+    .style("margin-right", "20vh");
+
+  var tooltip = placedChart.append("g")
+    .attr("transform", "translate(0,0)")
+    .style("opacity", 0);
+
+  tooltip.append("rect")
+    .attr("width", 85)
+    .attr("height", 55)
+    .attr("x", 20)
+    .attr("y", 20)
+    .style("stroke", "black")
+    .style("stroke-width", "1px")
+    .style("fill", "white")
+    .style("fill-opacity", 0.7)
+    .style("pointer-events", "none");
+
+  var tooltipTextTitle = tooltip.append("text")
+      .style("font-size", "11px")
+      .style("font-family", "sans-serif")
+      .style("font-weight", "bold")
+      .attr("x", 30)
+      .attr("y", 35);
+
+  var tooltipTextStartYear = tooltip.append("text")
+      .style("font-size", "12px")
+      .attr("x", 30)
+      .attr("y", 68);
+
+  var tooltipTextEndYear = tooltip.append("text")
+      .style("font-size", "12px")
+      .attr("x", 30)
+      .attr("y", 52);
+
+  var tooltipTextStartData = tooltip.append("text")
+      .style("font-size", "12px")
+      .attr("x", 65)
+      .attr("y", 68);
+
+  var tooltipTextEndData = tooltip.append("text")
+      .style("font-size", "12px")
+      .attr("x", 65)
+      .attr("y", 52);
+
+
+  placedChart.selectAll("[data-chart]")
+    .on("mouseover", function(){
+      d3.select(this).style("fill-opacity", 0.8);
+      var popupInfo = d3.select(this).attr("data-chart").split(":");
+      var title = popupInfo[0].substring(0, popupInfo[0].length - 5);
+      var yearStart = popupInfo[0].substr(-4);
+      var dataStart = popupInfo[1].split(" ")[0];
+      var yearEnd = popupInfo[1].split(" ")[1];
+      var dataEnd = popupInfo[2];
+
+      tooltip.style("opacity", 1);
+
+      tooltipTextTitle.text(title);
+      tooltipTextStartYear.text(yearStart + ":");
+      tooltipTextEndYear.text(yearEnd + ":");
+      tooltipTextStartData.text(dataStart);
+      tooltipTextEndData.text(dataEnd)
+    })
+
+
+    .on("mousemove", function(){
+      let mx = (d3.mouse(this)[0] - 40);
+      let my = (d3.mouse(this)[1] - 100);
+      if(mx < -19){
+        mx = mx + 40;
+      }
+      if(my < -19){
+        my = my + 40 + 75;
+      }
+      tooltip.attr("transform", "translate(" + mx + "," + my + ")");
+    })
+
+
+    .on("mouseout", function(){
+      d3.select(this).style("fill-opacity", 1);
+    })
+
+
+})
+
+</script>
+</body>
+
+</html>
