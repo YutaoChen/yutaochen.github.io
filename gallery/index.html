@@ -15,6 +15,16 @@
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<style>
 
+	.slide
+{
+  opacity:0;
+}
+
+	.hideme h1 p
+{
+	opacity:0;
+}
+
 	body, html {
 	height: 100%;
 	margin: 0;
@@ -49,7 +59,6 @@ p {
 	padding-top: 0px;
 	margin: 0px;
 }
-
 }
 
 .intro {
@@ -267,9 +276,9 @@ p {
 
 	<div class="section" id="section1">
 		<div class="intro">
-			<div class="slide"><h1>Silhouettes</h1><p>Partially due to the limited dynamic range, silhouettes tend to be my comfort zone when capturing images with my phone.
+			<div class="slide"><div class="hideme"><h1>Silhouettes</h1><p>Partially due to the limited dynamic range, silhouettes tend to be my comfort zone when capturing images with my phone.
 				<br><br>
-				There is something inherently inviting about that simplicity lying between the light and the dark.</p></div>
+				There is something inherently inviting about that simplicity lying between the light and the dark.</p></div></div>
 			<div class="slide"><img src="imgs/2.jpg" height="910vh"></div>
 			<div class="slide"><img src="imgs/3.jpg" width="980vw"></div>
 			<div class="slide"><img src="imgs/7.jpg" height="910vh"></div>
@@ -280,9 +289,9 @@ p {
 
 	<div class="section" id="section2">
 		<div class="intro">
-			<div class="slide"><h1>Black and White</h1><p>One of my favourite aspects of mobile photography is having different texture at my fingertips.
+			<div class="slide"><div class="hideme"><h1>Black and White</h1><p>One of my favourite aspects of mobile photography is having different texture at my fingertips.
 				<br><br>
-				Sometimes it just makes sense using it as an analog film camera.</p></div>
+				Sometimes it just makes sense using it as an analog film camera.</p></div></div>
 			<div class="slide"><img src="imgs/17.jpg" height="910vh"></div>
 			<div class="slide"><img src="imgs/25.jpg" height="910vh"></div>
 			<div class="slide"><img src="imgs/11.jpg" height="910vh"></div>
@@ -292,9 +301,8 @@ p {
 
 	<div class="section" id="section3">
 		<div class="intro">
-			<div class="slide"><h1>People</h1><p>Public streets can be overwhelming for the sheer volume of visual information they offer on the fly,
-				but the center of my images always seems to be people.
-				</p></div>
+			<div class="slide"><div class="hideme"><h1>People</h1><p>Public streets can be overwhelming for the sheer volume of visual information they offer on the fly,
+				but the center of my images always seems to be people.</p></div></div>
 			<div class="slide"><img src="imgs/5.jpg" width="980vw"></div>
 			<div class="slide"><img src="imgs/19.jpg" height="910vh"></div>
 			<div class="slide"><img src="imgs/18.jpg" height="910vh"></div>
@@ -305,8 +313,8 @@ p {
 
 	<div class="section" id="section4">
 		<div class="intro">
-			<div class="slide"><h1>Interpretive Eye</h1><p>Flexibility is important. <br><br> These are moments when my phone becomes not just the best camera I have with me. <br><br> But my best camera period.
-				</p></div>
+			<div class="slide"><div class="hideme"><h1>Interpretive Eye</h1><p>Flexibility is important. <br><br> These are moments when my phone becomes not just the best camera I have with me. <br><br> But my best camera period.
+			</p></div></div>
 			<div class="slide"><img src="imgs/1.jpg" width="980vw"></div>
 			<div class="slide"><img src="imgs/16.jpg" width="980vw"></div>
 			<div class="slide"><img src="imgs/27.jpg" width="980vw"></div>
@@ -315,8 +323,8 @@ p {
 
 	<div class="section" id="section5">
 		<div class="intro">
-			<div class="slide"><h2>"Exercise your power of observation. Learn to look and see deeply."</h2></div>
-			<div class="slide"><p>Photos by Yutao Chen. <br><br> Produced by Yutao Chen with fullPage.js.</p></div>
+			<div class="slide"><div class="hideme"><h2>"Exercise your power of observation. Learn to look and see deeply."</h2></div></div>
+			<div class="slide"><div class="hideme"><p>Photos by Yutao Chen. <br><br> Produced by Yutao Chen with fullPage.js.</p></div></div>
 		</div>
 	</div>
 </div>
@@ -324,6 +332,8 @@ p {
 
 <script type="text/javascript" src="fullpage.scrollHorizontally.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/fullpage.js/dist/fullpage.extensions.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="attrchange.js"></script>
 
 
 <script type="text/javascript">
@@ -340,9 +350,48 @@ p {
 				scrollingSpeed: 1000,
 				responsiveWidth: 900,
         afterResponsive: function(isResponsive){
-
         }
 			});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$(".slide").eq(0).animate({"opacity":"1"},1500);  //fade the first div.section in on page load
+
+$(".slide").attrchange({
+    trackValues: true, // set to true so that the event object is updated with old & new values
+    callback: function(evnt) {
+        if(evnt.attributeName == "class") { // which attribute you want to watch for changes
+            if(evnt.newValue.search(/active/i) == -1) { // "active" is the class name you search for inside "class" attribute
+                $(".slide.active").animate({"opacity":"1"},1500); //fade in the section with class active
+            }
+        }
+    }
+});
+
+}); //end of document ready
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$(".hideme").eq(0).animate({"opacity":"1"},1500);  //fade the first div.section in on page load
+
+$(".hideme").attrchange({
+    trackValues: true, // set to true so that the event object is updated with old & new values
+    callback: function(evnt) {
+        if(evnt.attributeName == "class") { // which attribute you want to watch for changes
+            if(evnt.newValue.search(/active/i) == -1) { // "active" is the class name you search for inside "class" attribute
+                $(".hideme.active").animate({"opacity":"1"},1500); //fade in the section with class active
+            }
+        }
+    }
+});
+
+}); //end of document ready
 </script>
 
 
