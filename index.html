@@ -249,6 +249,13 @@
 			text-align: left;
 		}
 
+		.navbar-wrapper{
+			position:fixed;
+			z-index:9999;
+			top:0;
+			width:100%;
+		}
+
 		#home{
 			margin-top:20px;
 		}
@@ -281,8 +288,36 @@
 </head>
 
 
-	<!-- start of body -->
+<!-- start of body -->
 <body>
+<!-- Top Navigation (remove if not needed)
+	================================================== -->
+	<div class="navbar-wrapper">
+		<div class="container">
+			<div class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="http://www.yutaochen.com/">Home</a></li>
+							<li><a href="http://www.yutaochen.com/video">Video</a></li>
+							<li><a href="http://www.yutaochen.com/singles">Photo</a></li>
+							<li><a href="http://www.yutaochen.com/printdigital">Reporting</a></li>
+							<li><a href="http://www.yutaochen.com/iphone">iPhone</a></li>
+							<li><a href="http://www.yutaochen.com/biography">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 		<div class="container" id="home">
 			<div class="jumbotron">
 					<h1 style="font-size: 40px">Yutao Chen</h1>
@@ -292,15 +327,11 @@
 	        <a href="https://www.linkedin.com/in/yutao-chen-9924a4105/" target="_blank"><i class="fab fa-linkedin"></i></a>
 	        <a href="https://github.com/yutaochen" target="_blank"><i class="fab fa-github-square"></i></a>
 
-					<p class="lead" style="font-size: 17px">I'm a multimedia editor at the Arkansas Democrat-Gazette fascinated by
-						<strong style="color: #FCB332; font-size: 17px;">visual storytelling</strong>.</p>
+					<p class="lead" style="font-size: 17px">I'm a multimedia editor at the <a href="https://www.arkansasonline.com" target="_blank">Arkansas Democrat-Gazette</a> fascinated by visual storytelling.</p>
 
-							<p class="lead" style="font-size: 17px">When I'm not shooting <strong style="color: #193461; font-size: 17px">
-								photos or videos</strong>, I pitch stories based on <strong style="color: #193461; font-size: 17px">
-									data</strong> and spend unhealthy amount of time visualizing interesting
-									<strong style="color: #FCB332; font-size: 17px;">facts</strong>.</p>
+							<p class="lead" style="font-size: 17px">When I'm not shooting photos or videos, I think about how to present stories on the web creatively and effectively.</p>
 
-										<p class="lead" style="font-size: 17px">Here is where I compile the finished products.</p>
+									<p class="lead" style="font-size: 17px">You can download my resume <a href="https://static1.squarespace.com/static/5806e6ac9de4bb8d17ffdc93/t/5d2fead4247626000116b002/1563421397107/Resume.pdf" target="_blank">here</a>.</p>
 			</div>
 		</div>
 
