@@ -1,0 +1,333 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Arsenal Front Three Compared</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <style>
+		body {
+		  font-family: 'Roboto', sans-serif;
+      background-color: #fff2f2;
+		}
+
+    p{
+      font-size: 17px;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    small{
+      font-weight:normal;
+      font-size: 16px;
+    }
+
+    h1{
+      font-size: 24px;
+      text-align: center;
+    }
+
+    h2{
+      font-size: 20px;
+      text-align: center;
+    }
+
+    h3{
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .auba{
+      display:none ;
+      width: 60%;
+      background-color: hsla(0, 100%, 50%, 0.1);
+      border-radius: 25px;
+      opacity: 0.5;
+      padding: 20px;
+    }
+
+    .laca{
+      display:none ;
+      width: 60%;
+      background-color: hsla(0, 100%, 50%, 0.1);
+      border-radius: 25px;
+      opacity: 0.5;
+      padding: 20px;
+    }
+
+    .spacer{
+      padding: 10%;
+    }
+
+    .pepe{
+      display:none ;
+      width: 60%;
+      background-color: hsla(0, 100%, 50%, 0.1);
+      border-radius: 25px;
+      opacity: 0.5;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 50%;
+    }
+
+	</style>
+  </head>
+        <body>
+          <h3>Arsenal Front Three's 2018/19 Stats Compared<h3>
+            <small style="padding-left:1000px;">Source: Premier League and WhoScored.com</small>
+
+          <div class="row">
+  <div class="column">
+    <div id="radar">
+      </div>
+        </div>
+  <div class="column">
+    <div class="spacer"></div>
+    <div class="card">
+    <div class="auba">
+      <img src="auba.png" alt="Pierre-Emerick Aubameyang" style="width: 190px; display: block; margin-left: auto; margin-right: auto;">
+        <h1 style="text-align:center;">Pierre-Emerick Aubameyang<h1>
+          <h2 style="text-align:center;">Arsenal | English Premier League</h2>
+                <p>
+                   Nationality: <small>Gabonese</small><br><br>
+                   Born: <small>June 18, 1989 (age 30 years)</small><br><br>
+                   Apps (Subs): <small>36 (6)</small><br><br>
+                   Goals (Penalties): <small>22 (4)</small><br><br>
+                   Assists: <small>5</small><br><br>
+                   Shooting Accuracy: <small>43%</small><br><br>
+                   Passes Per Game: <small>19.22</small><br><br>
+                   Passing Accuracy: <small>74%</small><br><br>
+                 </p>
+              </div>
+
+      <div class="laca">
+        <img src="laca.png" alt="Alexandre Lacazette" style="width: 200px; display: block; margin-left: auto; margin-right: auto;">
+          <h1 style="text-align:center;">Alexandre Lacazette<h1>
+            <h2 style="text-align:center;">Arsenal | English Premier League</h2>
+                  <p>
+                     Nationality: <small>French</small><br><br>
+                     Born: <small>May 28, 1991 (age 28 years)</small><br><br>
+                     Apps (Subs): <small>35 (8)</small><br><br>
+                     Goals (Penalties): <small>13 (0)</small><br><br>
+                     Assists: <small></small>8<br><br>
+                     Shooting Accuracy: <small>37%</small><br><br>
+                     Passes Per Game: <small>22.03</small><br><br>
+                     Passing Accuracy: <small>74.2%</small><br><br>
+                   </p>
+                </div>
+
+        <div class="pepe">
+          <img src="pepe.png" alt="Nicolas Pépé" style="width: 200px; display: block; margin-left: auto; margin-right: auto;">
+            <h1 style="text-align:center;">Nicolas Pépé<h1>
+              <h2 style="text-align:center;">LOSC Lille | French League 1</h2>
+                    <p>
+                       Nationality: <small>Ivorian</small><br><br>
+                       Born: <small>May 29, 1995 (age 24 years)</small><br><br>
+                       Apps (Subs): <small>38 (1)</small><br><br>
+                       Goals (Penalties):<small>22 (9)</small><br><br>
+                       Assists: <small>11</small><br><br>
+                       Shooting Accuracy: <small>52%</small><br><br>
+                       Passes Per Game: <small>31.6</small><br><br>
+                       Passing Accuracy: <small>79.1%</small><br><br>
+                     </p>
+                  </div>
+                </div>
+              </div>
+</div>
+
+
+
+        </body>
+        <script>
+
+          let features = ["Aerials Won","Shots","Dribbles","Key Passes","Crosses + Through Balls","Dispossessed","Tackles + Interceptions"];
+
+          var data = [
+
+            {
+              "Name": "Alexandre Lacazette",
+              "Aerials Won": 1.3,
+              "Shots": 2.3,
+              "Dribbles": 0.7,
+              "Key Passes": 0.9,
+              "Crosses + Through Balls": 0.2,
+              "Dispossessed": 1,
+              "Tackles + Interceptions": 1.7,
+            },
+              {
+                "Name": "Pierre-Emerick Aubameyang",
+                "Aerials Won": 0.9,
+                "Shots": 2.6,
+                "Dribbles": 0.8,
+                "Key Passes": 0.9,
+                "Crosses + Through Balls": 0.3,
+                "Dispossessed": 0.9,
+                "Tackles + Interceptions": 0.8,
+              },
+              {
+                "Name": "Nicolas Pépé",
+                "Aerials Won": 1.2,
+                "Shots": 0.6,
+                "Dribbles": 2.7,
+                "Key Passes": 1.8,
+                "Crosses + Through Balls": 1.7,
+                "Dispossessed": 2.9,
+                "Tackles + Interceptions": 1.0,
+              }];
+
+          var svg = d3.select("#radar").append("svg")
+          .attr("width", 1080)
+          .attr("height", 1080);
+
+          let radialScale = d3.scaleLinear()
+          .domain([0,3])
+          .range([0,400]);
+          let ticks = [0.5,1.0,1.5,2.0,2.5,3.0];
+
+          ticks.forEach(t =>
+          svg.append("circle")
+          .attr("cx", 500)
+          .attr("cy", 500)
+          .attr("fill", "none")
+          .attr("stroke", "gray")
+          .attr("stroke-opacity", 0.7)
+          .attr("r", radialScale(t))
+      );
+
+          ticks.forEach(t =>
+        svg.append("text")
+        .attr("x", 502)
+        .attr("y", 495 - radialScale(t))
+        .text(t.toString())
+        .style("fill","darkred")
+        .style("font-size","14px")
+    );
+
+    function angleToCoordinate(angle, value){
+    let x = Math.cos(angle) * radialScale(value);
+    let y = Math.sin(angle) * radialScale(value);
+    return {"x": 500 + x, "y": 500 - y};
+}
+
+for (var i = 0; i < features.length; i++) {
+    let ft_name = features[i];
+    let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
+    let line_coordinate = angleToCoordinate(angle, 3);
+    let label_coordinate = angleToCoordinate(angle, 3.3);
+
+    //draw axis line
+    svg.append("line")
+    .attr("x1", 500)
+    .attr("y1", 500)
+    .attr("x2", line_coordinate.x)
+    .attr("y2", line_coordinate.y)
+    .attr("stroke","grey")
+    .attr("stroke-opacity", 0.7);
+
+
+    //draw axis label
+    svg.append("text")
+    .attr("x", label_coordinate.x - 38)
+    .attr("y", label_coordinate.y + 5)
+    .text(ft_name)
+    .style("font-weight", "900")
+    .style("font-size", "18px")
+}
+
+let line = d3.line()
+    .x(d => d.x)
+    .y(d => d.y);
+
+let colors = ["orange", "darkred", "steelblue"]
+
+let ids = ["laca", "auba", "pepe"];
+
+
+function getPathCoordinates(data_point){
+    let coordinates = [];
+    for (var i = 0; i < features.length; i++){
+        let ft_name = features[i];
+        let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
+        coordinates.push(angleToCoordinate(angle, data_point[ft_name]));
+    }
+    return coordinates;
+}
+
+for (var i = 0; i < data.length; i ++){
+    let d = data[i];
+    let color = colors[i];
+    let id = ids[i];
+    let coordinates = getPathCoordinates(d);
+
+    //draw the path element
+    svg.append("path")
+    .datum(coordinates)
+    .attr("d",line)
+    .attr("fill", color)
+    .attr("opacity", 0.4)
+    .attr("id", id);
+}
+
+var tooltip = d3.select(".laca")
+
+ svg.select("#laca")
+ .on("mouseover", function(d) {
+     tooltip.style('display', 'block')
+     tooltip.style('opacity',2);
+
+     d3.select(this)
+     .style("opacity", "0.8");
+      })
+
+  .on("mouseout", function(d) {
+    tooltip.style('display', 'none')
+    tooltip.style('opacity',0);
+    d3.select(this)
+    .style("opacity", "0.4");
+
+   });
+
+
+   var tooltip2 = d3.select(".auba")
+
+    svg.select("#auba")
+    .on("mouseover", function(d) {
+        tooltip2.style('display', 'block')
+        tooltip2.style('opacity',2);
+        d3.select(this)
+        .style("opacity", "0.8");
+         })
+
+     .on("mouseout", function(d) {
+       tooltip2.style('display', 'none')
+       tooltip2.style('opacity',0);
+       d3.select(this)
+       .style("opacity", "0.4");
+      });
+
+
+      var tooltip3 = d3.select(".pepe")
+
+       svg.select("#pepe")
+       .on("mouseover", function(d) {
+           tooltip3.style('display', 'block')
+           tooltip3.style('opacity',2);
+           d3.select(this)
+           .style("opacity", "0.8");
+            })
+
+        .on("mouseout", function(d) {
+          tooltip3.style('display', 'none')
+          tooltip3.style('opacity',0);
+          d3.select(this)
+          .style("opacity", "0.4");
+         });
+
+        </script>
+    </html>
