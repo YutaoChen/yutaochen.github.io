@@ -7,7 +7,7 @@
         <style>
 		body {
 		  font-family: 'Roboto', sans-serif;
-      background-color: #fff2f2;
+      background-color: #fff5f2;
 		}
 
     p{
@@ -19,16 +19,18 @@
 
     small{
       font-weight:normal;
-      font-size: 16px;
+      font-size: 17px;
     }
 
     h1{
       font-size: 24px;
+      font-weight:normal;
       text-align: center;
     }
 
     h2{
       font-size: 20px;
+      font-weight:normal;
       text-align: center;
     }
 
@@ -40,32 +42,46 @@
     .auba{
       display:none ;
       width: 60%;
-      background-color: hsla(0, 100%, 50%, 0.1);
+      background-color: #e8e8e8;
       border-radius: 25px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
       opacity: 0.5;
-      padding: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .laca{
       display:none ;
       width: 60%;
-      background-color: hsla(0, 100%, 50%, 0.1);
+      background-color: #e8e8e8;
+      border-radius: 25px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
       border-radius: 25px;
       opacity: 0.5;
-      padding: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .spacer{
-      padding: 10%;
+      padding: 20px;
     }
 
     .pepe{
       display:none ;
       width: 60%;
-      background-color: hsla(0, 100%, 50%, 0.1);
+      background-color: #e8e8e8;
+      border-radius: 25px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
       border-radius: 25px;
       opacity: 0.5;
-      padding: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .row {
@@ -79,7 +95,7 @@
 	</style>
   </head>
         <body>
-          <h3>Arsenal Front Three's 2018/19 League Stats Compared<h3>
+          <h3>Arsenal Front Three's 2018/19 Demestic League Stats Compared</h3>
             <small style="padding-left:1000px;">Source: Premier League and WhoScored.com</small>
 
           <div class="row">
@@ -89,13 +105,12 @@
         </div>
   <div class="column">
     <div class="spacer"></div>
-    <div class="card">
     <div class="auba">
       <img src="auba.png" alt="Pierre-Emerick Aubameyang" style="width: 190px; display: block; margin-left: auto; margin-right: auto;">
         <h1 style="text-align:center;">Pierre-Emerick Aubameyang<h1>
-          <h2 style="text-align:center;">Arsenal | English Premier League</h2>
-                <p>
-                   Nationality: <small>Gabonese</small><br><br>
+          <h2 style="text-align:center; color: white; background-color:#DB0007; padding:3px">Arsenal | English Premier League</h2>
+                <p style="padding-left: 20px;">
+                   Nationality: <small>Gabonese 🇬🇦</small><br><br>
                    Born: <small>June 18, 1989 (age 30 years)</small><br><br>
                    Apps (Subs): <small>36 (6)</small><br><br>
                    Goals (Penalties): <small>22 (4)</small><br><br>
@@ -109,13 +124,13 @@
       <div class="laca">
         <img src="laca.png" alt="Alexandre Lacazette" style="width: 200px; display: block; margin-left: auto; margin-right: auto;">
           <h1 style="text-align:center;">Alexandre Lacazette<h1>
-            <h2 style="text-align:center;">Arsenal | English Premier League</h2>
-                  <p>
-                     Nationality: <small>French</small><br><br>
+            <h2 style="text-align:center; color: white; background-color:#DB0007; padding:3px">Arsenal | English Premier League</h2>
+                  <p style="padding-left: 20px;">
+                     Nationality: <small>French 🇫🇷</small><br><br>
                      Born: <small>May 28, 1991 (age 28 years)</small><br><br>
                      Apps (Subs): <small>35 (8)</small><br><br>
                      Goals (Penalties): <small>13 (0)</small><br><br>
-                     Assists: <small></small>8<br><br>
+                     Assists: <small>8</small><br><br>
                      Shooting Accuracy: <small>37%</small><br><br>
                      Passes Per Game: <small>22.03</small><br><br>
                      Passing Accuracy: <small>74.2%</small><br><br>
@@ -125,19 +140,18 @@
         <div class="pepe">
           <img src="pepe.png" alt="Nicolas Pépé" style="width: 200px; display: block; margin-left: auto; margin-right: auto;">
             <h1 style="text-align:center;">Nicolas Pépé<h1>
-              <h2 style="text-align:center;">LOSC Lille | French League 1</h2>
-                    <p>
-                       Nationality: <small>Ivorian</small><br><br>
+              <h2 style="text-align:center; color: #DB0007; background-color: #063672; padding:3px">LOSC Lille | French League 1</h2>
+                    <p style="padding-left: 20px;">
+                       Nationality: <small>Ivorian 🇨🇮</small><br><br>
                        Born: <small>May 29, 1995 (age 24 years)</small><br><br>
                        Apps (Subs): <small>38 (1)</small><br><br>
-                       Goals (Penalties):<small>22 (9)</small><br><br>
+                       Goals (Penalties): <small>22 (9)</small><br><br>
                        Assists: <small>11</small><br><br>
                        Shooting Accuracy: <small>52%</small><br><br>
                        Passes Per Game: <small>31.6</small><br><br>
                        Passing Accuracy: <small>79.1%</small><br><br>
                      </p>
                   </div>
-                </div>
               </div>
 </div>
 
@@ -182,18 +196,18 @@
               }];
 
           var svg = d3.select("#radar").append("svg")
-          .attr("width", 1080)
-          .attr("height", 1080);
+          .attr("width", 1000)
+          .attr("height", 800);
 
           let radialScale = d3.scaleLinear()
           .domain([0,3])
-          .range([0,400]);
+          .range([0,340]);
           let ticks = [0.5,1.0,1.5,2.0,2.5,3.0];
 
           ticks.forEach(t =>
           svg.append("circle")
           .attr("cx", 500)
-          .attr("cy", 500)
+          .attr("cy", 400)
           .attr("fill", "none")
           .attr("stroke", "gray")
           .attr("stroke-opacity", 0.7)
@@ -203,7 +217,7 @@
           ticks.forEach(t =>
         svg.append("text")
         .attr("x", 502)
-        .attr("y", 495 - radialScale(t))
+        .attr("y", 395 - radialScale(t))
         .text(t.toString())
         .style("fill","darkred")
         .style("font-size","14px")
@@ -212,7 +226,7 @@
     function angleToCoordinate(angle, value){
     let x = Math.cos(angle) * radialScale(value);
     let y = Math.sin(angle) * radialScale(value);
-    return {"x": 500 + x, "y": 500 - y};
+    return {"x": 500 + x, "y": 400 - y};
 }
 
 for (var i = 0; i < features.length; i++) {
@@ -224,7 +238,7 @@ for (var i = 0; i < features.length; i++) {
     //draw axis line
     svg.append("line")
     .attr("x1", 500)
-    .attr("y1", 500)
+    .attr("y1", 400)
     .attr("x2", line_coordinate.x)
     .attr("y2", line_coordinate.y)
     .attr("stroke","grey")
@@ -233,11 +247,11 @@ for (var i = 0; i < features.length; i++) {
 
     //draw axis label
     svg.append("text")
-    .attr("x", label_coordinate.x - 38)
+    .attr("x", label_coordinate.x - 32)
     .attr("y", label_coordinate.y + 5)
     .text(ft_name)
     .style("font-weight", "900")
-    .style("font-size", "18px")
+    .style("font-size", "17px")
 }
 
 let line = d3.line()
